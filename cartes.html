@@ -124,6 +124,22 @@
 
 
 <script>
+
+let translations = {};
+
+async function carregarTraduccions(idioma) {
+  try {
+    const res = await fetch(`${idioma}.json`);
+    translations = await res.json();
+  } catch (error) {
+    console.error("Error carregant les traduccions:", error);
+  }
+}
+
+function t(clau) {
+  return translations[clau.toLowerCase()] || clau;
+}
+
 async function carregarJSON(nom) {
   const res = await fetch(nom);
   return await res.json();
@@ -145,7 +161,7 @@ function crearRevers(tipus) {
   }[tipus] || "🎲";
   const carta = document.createElement("div");
   carta.className = "carta";
-  carta.innerHTML = `<h2>${emoji}<br>${tipus}</h2>`;
+  carta.innerHTML = `<h2>${emoji}<br>${t(tipus)}</h2>`;
   return carta;
 }
 
@@ -179,8 +195,7 @@ function crearCartaProposta(p) {
   const emoji = p.tipus === "Pel·licula" ? "🎬" : "📺";
   const nivells = { curta: 1, mitja: 2, llarga: 3 }[p.durada.toLowerCase()] || 0;
   const barraHTML = `<div class=\"barra-durada\">${[0,1,2].map(i => `<div class=\"segment ${i < nivells ? 'ple' : ''}\"></div>`).join("")}</div>`;
-  console.log(p)
-    const idioma = p.idioma_original ? `<div class=\"tags\"><span class=\"tag\">${p.idioma_original}</span></div>` : "";
+  const idioma = p.idioma_original ? `<div class=\"tags\"><span class=\"tag\">${p.idioma_original}</span></div>` : "";
 
   const html = `
     <div class=\"emoji-titol\"><span>${emoji}</span><h2>${p.titol}</h2></div>
@@ -196,17 +211,18 @@ function crearCartaContext(c) {
 }
 
 function crearCartaObjectiu(o) {
-  return crearCartaHTML("Objectiu", `<p><strong>${o.descripcio}</strong></p><p>(${o.punts} punt${o.punts > 1 ? 's' : ''})</p>`);
+  return crearCartaHTML(t("Objectiu"), `<p><strong>${o.descripcio}</strong></p><p>(${o.punts} punt${o.punts > 1 ? 's' : ''})</p>`);
 }
 
 function crearCartaEspecial(e) {
   return crearCartaHTML(
     e.titol,
-    `<p><strong>${e.efecte}</strong></p><p>Cost: ${e.cost}</p>`
+    `<p><strong>${e.efecte}</strong></p><p>${t('Cost')}: ${e.cost}</p>`
   );
 }
 
 async function iniciar() {
+  carregarTraduccions("ca");
   const [propostes, contextos, objectius, especials] = await Promise.all([
     carregarJSON("propostes.json"),
     carregarJSON("contextos.json"),
