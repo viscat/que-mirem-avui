@@ -1,102 +1,44 @@
 [
   {
-    "titol": "Mira què mira",
-    "efecte": "Mira un objectiu de l'altre jugador",
+    "titol": "Intercanvi al centre",
+    "efecte": "Intercanvia dues propostes del centre de lloc.",
+    "cost": 3
+  },
+  {
+    "titol": "Canvi total d’objectius",
+    "efecte": "Intercanvia tots els teus objectius pels de l’altre jugador.",
+    "cost": 3
+  },
+  {
+    "titol": "Eliminar votació",
+    "efecte": "Elimina un token de votació de qualsevol proposta.",
     "cost": 1
   },
   {
-    "titol": "Et pensaves que m’agradava aquella?",
-    "efecte": "Intercanvia dues propostes del centre",
+    "titol": "Redirigir votació",
+    "efecte": "Mou un token de votació d’una proposta a una altra.",
+    "cost": 2
+  },
+  {
+    "titol": "Escombrar el centre",
+    "efecte": "Elimina una proposta del centre (només si la diferència de puntuació és ≤ 0).",
     "cost": 1
   },
   {
-    "titol": "Espionatge emocional",
-    "efecte": "Mira i intercanvia un objectiu amb el de l’altre jugador",
-    "cost": 1
+    "titol": "Espionatge total",
+    "efecte": "Mira un objectiu de l’altre jugador i decideix si intercanviar-lo amb un dels teus.",
+    "cost": 2
   },
   {
-    "titol": "Treure-li el mando",
-    "efecte": "Una proposta no pot rebre tokens ni efectes fins al teu proper torn",
-    "cost": 1
+    "titol": "Nou objectiu",
+    "efecte": "Roba un nou objectiu i descarta un dels teus.",
+    "cost": 1,
+    "fixa": true
   },
   {
-    "titol": "Redirigeix la tensió",
-    "efecte": "Mou un token d’una proposta a una altra",
-    "cost": 1
-  },
-  {
-    "titol": "¡Això no val!",
-    "efecte": "Anul·la una carta especial o token de l’altre jugador",
-    "cost": 1
-  },
-  {
-    "titol": "¡Això no val!",
-    "efecte": "Anul·la una carta especial o token de l’altre jugador",
-    "cost": 1
-  },
-  {
-    "titol": "¡Això no val!",
-    "efecte": "Anul·la una carta especial o token de l’altre jugador",
-    "cost": 1
-  },
-  {
-    "titol": "Mira què mira",
-    "efecte": "Mira un objectiu de l'altre jugador",
-    "cost": 1
-  },
-  {
-    "titol": "Et pensaves que m’agradava aquella?",
-    "efecte": "Intercanvia dues propostes del centre",
-    "cost": 1
-  },
-  {
-    "titol": "Espionatge emocional",
-    "efecte": "Mira i intercanvia un objectiu amb el de l’altre jugador",
-    "cost": 1
-  },
-  {
-    "titol": "Treure-li el mando",
-    "efecte": "Una proposta no pot rebre tokens ni efectes fins al teu proper torn",
-    "cost": 1
-  },
-  {
-    "titol": "Redirigeix la tensió",
-    "efecte": "Mou un token d’una proposta a una altra",
-    "cost": 1
-  },
-  {
-    "titol": "¡Això no val!",
-    "efecte": "Anul·la una carta especial o token de l’altre jugador",
-    "cost": 1
-  },
-  {
-    "titol": "Mira què mira",
-    "efecte": "Mira un objectiu de l'altre jugador",
-    "cost": 1
-  },
-  {
-    "titol": "Et pensaves que m’agradava aquella?",
-    "efecte": "Intercanvia dues propostes del centre",
-    "cost": 1
-  },
-  {
-    "titol": "Espionatge emocional",
-    "efecte": "Mira i intercanvia un objectiu amb el de l’altre jugador",
-    "cost": 1
-  },
-  {
-    "titol": "Treure-li el mando",
-    "efecte": "Una proposta no pot rebre tokens ni efectes fins al teu proper torn",
-    "cost": 1
-  },
-  {
-    "titol": "Redirigeix la tensió",
-    "efecte": "Mou un token d’una proposta a una altra",
-    "cost": 1
-  },
-  {
-    "titol": "¡Això no val!",
-    "efecte": "Anul·la una carta especial o token de l’altre jugador",
-    "cost": 1
+    "titol": "Nova proposta",
+    "efecte": "Afegeix una nova proposta al centre.",
+    "cost": 1,
+    "fixa": true
   }
 ]
