@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+  <meta charset="UTF-8" />
+  <title>Cartes del Joc: Què Mirem Avui?</title>
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      padding: 0px;
+      margin: 0px;
+    }
+    .seccio {
+      page-break-after: always;
+    }
+    .grid-pagines {
+      display: flex;
+      flex-direction: column;
+    }
+    .pagina {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(95mm, 1fr));
+      gap: 10mm;
+      justify-items: center;
+      page-break-after: always;
+    }
+    .carta {
+      width: 90mm;
+      height: 60mm;
+      border: 2px solid #000;
+      border-radius: 6px;
+      padding: 4mm;
+      box-sizing: border-box;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      font-size: 20px;
+    }
+    .carta h2 {
+      font-size: 25px;
+      margin: 0 0 0.3rem;
+    }
+    .carta p {
+      margin: 0.2rem 0;
+    }
+    .emoji-titol {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 4px;
+    }
+    .emoji-titol span {
+      margin: 0 0 0.3rem;
+      font-size: 30px;
+    }
+    .estrelles {
+      text-align: center;
+      font-size: 25px;
+      margin-bottom: 4px;
+    }
+    .barra-durada {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 4px auto;
+      width: 80px;
+      height: 20px;
+      border-radius: 4px;
+      overflow: hidden;
+      border: 1px solid #000;
+      background-color: #000;
+    }
+    .barra-durada .segment {
+      flex: 1;
+      height: 100%;
+      background-color: white;
+    }
+    .barra-durada .segment.ple {
+      background-color: #555;
+    }
+    .barra-durada .segment:not(:last-child) {
+      border-right: 1px solid #000;
+    }
+    .tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 2px;
+      margin-top: 4px;
+      font-size: 18px;
+      justify-content: center;
+    }
+    .tag {
+      background: #000;
+      color: #fff;
+      padding: 2px 4px;
+      border-radius: 4px;
+    }
+    @media print {
+      .carta {
+        break-inside: avoid;
+        page-break-inside: avoid;
+      }
+    }
+  </style>
+</head>
+<body>
+  
+<div class="seccio">
+  <div id="propostes-pagines" class="grid-pagines"></div>
+</div>
+
+<div class="seccio">
+  <div id="contextos-pagines" class="grid-pagines"></div>
+</div>
+
+<div class="seccio">
+  <div id="objectius-pagines" class="grid-pagines"></div>
+</div>
+
+<div class="seccio">
+  <div id="especials-pagines" class="grid-pagines"></div>
+</div>
+
+
+<script>
+async function carregarJSON(nom) {
+  const res = await fetch(nom);
+  return await res.json();
+}
+
+function crearCartaHTML(titol, contingutHTML) {
+  const carta = document.createElement("div");
+  carta.className = "carta";
+  carta.innerHTML = `<h2>${titol}</h2>${contingutHTML}`;
+  return carta;
+}
+
+function crearRevers(tipus) {
+  const emoji = {
+    "Proposta": "🎞️",
+    "Context": "🛋️",
+    "Objectiu": "🎯",
+    "Especial": "🃏"
+  }[tipus] || "🎲";
+  const carta = document.createElement("div");
+  carta.className = "carta";
+  carta.innerHTML = `<h2>${emoji}<br>${tipus}</h2>`;
+  return carta;
+}
+
+function dividirEnPagines(array, midaPagina) {
+  const pagines = [];
+  for (let i = 0; i < array.length; i += midaPagina) {
+    pagines.push(array.slice(i, i + midaPagina));
+  }
+  return pagines;
+}
+
+function renderSeccioAmbReversos(dades, tipus, renderFunc, containerId) {
+  const container = document.getElementById(containerId);
+  const cartes = dades.map(renderFunc);
+  const pagines = dividirEnPagines(cartes, 8);
+
+  pagines.forEach(pagina => {
+    const front = document.createElement("div");
+    front.className = "pagina";
+    pagina.forEach(carta => front.appendChild(carta));
+    container.appendChild(front);
+
+    const revers = document.createElement("div");
+    revers.className = "pagina";
+    pagina.forEach(() => revers.appendChild(crearRevers(tipus)));
+    container.appendChild(revers);
+  });
+}
+
+function crearCartaProposta(p) {
+  const emoji = p.tipus === "Pel·licula" ? "🎬" : "📺";
+  const nivells = { curta: 1, mitja: 2, llarga: 3 }[p.durada.toLowerCase()] || 0;
+  const barraHTML = `<div class=\"barra-durada\">${[0,1,2].map(i => `<div class=\"segment ${i < nivells ? 'ple' : ''}\"></div>`).join("")}</div>`;
+  console.log(p)
+    const idioma = p.idioma_original ? `<div class=\"tags\"><span class=\"tag\">${p.idioma_original}</span></div>` : "";
+
+  const html = `
+    <div class=\"emoji-titol\"><span>${emoji}</span><h2>${p.titol}</h2></div>
+    <div class=\"estrelles\">${'⭐'.repeat(p.estrelles)}</div>
+    ${barraHTML}
+    <p style=\"text-align:center;\"><em>${p.genere}</em></p>
+    <div class=\"tags\">${idioma}</div>`;
+  return crearCartaHTML("", html);
+}
+
+function crearCartaContext(c) {
+  return crearCartaHTML(c.titol, `<p><strong>${c.efecte}</strong></p>`);
+}
+
+function crearCartaObjectiu(o) {
+  return crearCartaHTML("Objectiu", `<p><strong>${o.descripcio}</strong></p><p>(${o.punts} punt${o.punts > 1 ? 's' : ''})</p>`);
+}
+
+function crearCartaEspecial(e) {
+  return crearCartaHTML(
+    e.titol,
+    `<p><strong>${e.efecte}</strong></p><p>Cost: ${e.cost}</p>`
+  );
+}
+
+async function iniciar() {
+  const [propostes, contextos, objectius, especials] = await Promise.all([
+    carregarJSON("propostes.json"),
+    carregarJSON("contextos.json"),
+    carregarJSON("objectius.json"),
+    carregarJSON("especials.json")
+  ]);
+  renderSeccioAmbReversos(propostes, "Proposta", crearCartaProposta, "propostes-pagines");
+  renderSeccioAmbReversos(contextos, "Context", crearCartaContext, "contextos-pagines");
+  renderSeccioAmbReversos(objectius, "Objectiu", crearCartaObjectiu, "objectius-pagines");
+  renderSeccioAmbReversos(especials, "Especial", crearCartaEspecial, "especials-pagines");
+}
+
+iniciar();
+</script>
+
+</body>
+</html>

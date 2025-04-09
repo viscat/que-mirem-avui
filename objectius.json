@@ -1,0 +1,98 @@
+[
+  {
+    "descripcio": "Ha de tenir 1 estrella",
+    "punts": 4
+  },
+  {
+    "descripcio": "Ha de tenir 2 estrelles",
+    "punts": 3
+  },
+  {
+    "descripcio": "Ha de tenir 3 estrelles",
+    "punts": 1
+  },
+  {
+    "descripcio": "Ha de tenir 4 estrelles",
+    "punts": 2
+  },
+  {
+    "descripcio": "Ha de tenir 5 estrelles",
+    "punts": 4
+  },
+  {
+    "descripcio": "La duració ha de ser curta",
+    "punts": 1
+  },
+  {
+    "descripcio": "La duració ha de ser llarga",
+    "punts": 1
+  },
+  {
+    "descripcio": "La duració ha de ser mitja",
+    "punts": 1
+  },
+  {
+    "descripcio": "Ha de ser una pel·licula",
+    "punts": 1
+  },
+  {
+    "descripcio": "Ha de ser una sèrie",
+    "punts": 1
+  },
+  {
+    "descripcio": "Ha de ser del gènere Aventura",
+    "punts": 2
+  },
+  {
+    "descripcio": "Ha de ser del gènere Ciència-ficció",
+    "punts": 2
+  },
+  {
+    "descripcio": "Ha de ser del gènere Comèdia",
+    "punts": 2
+  },
+  {
+    "descripcio": "Ha de ser del gènere Documental",
+    "punts": 2
+  },
+  {
+    "descripcio": "Ha de ser del gènere Drama",
+    "punts": 2
+  },
+  {
+    "descripcio": "Ha de ser del gènere Fantasia",
+    "punts": 2
+  },
+  {
+    "descripcio": "Ha de ser del gènere Misteri",
+    "punts": 2
+  },
+  {
+    "descripcio": "Ha de ser del gènere Romàntic",
+    "punts": 2
+  },
+  {
+    "descripcio": "Ha de ser del gènere Terror",
+    "punts": 2
+  },
+  {
+    "descripcio": "Ha de ser del gènere Thriller",
+    "punts": 2
+  },
+  {
+    "descripcio": "Ha de ser en Català",
+    "punts": 2
+  },
+  {
+    "descripcio": "Ha de ser en Castellà",
+    "punts": 2
+  },
+  {
+    "descripcio": "Ha de ser en Anglès",
+    "punts": 1
+  },
+  {
+    "descripcio": "Ha de ser en Francès",
+    "punts": 3
+  }
+]

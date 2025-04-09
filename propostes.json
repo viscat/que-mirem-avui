@@ -1,0 +1,162 @@
+[
+  {
+    "titol": "El Gran Viatge",
+    "tipus": "Pel·licula",
+    "genere": "Aventura",
+    "durada": "Llarga",
+    "estrelles": 3,
+    "idioma_original": "Anglès"
+  },
+  {
+    "titol": "Coses Estranyes",
+    "tipus": "Sèrie",
+    "genere": "Ciència-ficció",
+    "durada": "Mitja",
+    "estrelles": 2,
+    "idioma_original": "Anglès"
+  },
+  {
+    "titol": "L’Amor Desordenat",
+    "tipus": "Pel·licula",
+    "genere": "Romàntic",
+    "durada": "Mitja",
+    "estrelles": 3,
+    "idioma_original": "Anglès"
+  },
+  {
+    "titol": "Malsons Quotidians",
+    "tipus": "Sèrie",
+    "genere": "Terror",
+    "durada": "Curta",
+    "estrelles": 3,
+    "idioma_original": "Castellà"
+  },
+  {
+    "titol": "Píxels i Nostàlgia",
+    "tipus": "Sèrie",
+    "genere": "Comèdia",
+    "durada": "Curta",
+    "estrelles": 3,
+    "idioma_original": "Anglès"
+  },
+  {
+    "titol": "Profunditats",
+    "tipus": "Pel·licula",
+    "genere": "Thriller",
+    "durada": "Llarga",
+    "estrelles": 4,
+    "idioma_original": "Francès"
+  },
+  {
+    "titol": "Els Dies Llargs",
+    "tipus": "Sèrie",
+    "genere": "Drama",
+    "durada": "Llarga",
+    "estrelles": 3,
+    "idioma_original": "Anglès"
+  },
+  {
+    "titol": "Supernova",
+    "tipus": "Pel·licula",
+    "genere": "Ciència-ficció",
+    "durada": "Curta",
+    "estrelles": 4,
+    "idioma_original": "Anglès"
+  },
+  {
+    "titol": "Riures Enllaunats",
+    "tipus": "Sèrie",
+    "genere": "Comèdia",
+    "durada": "Mitja",
+    "estrelles": 3,
+    "idioma_original": "Anglès"
+  },
+  {
+    "titol": "L’Ombra del Passat",
+    "tipus": "Pel·licula",
+    "genere": "Misteri",
+    "durada": "Llarga",
+    "estrelles": 4,
+    "idioma_original": "Castellà"
+  },
+  {
+    "titol": "Bon Appétit",
+    "tipus": "Sèrie",
+    "genere": "Documental",
+    "durada": "Curta",
+    "estrelles": 2,
+    "idioma_original": "Castellà"
+  },
+  {
+    "titol": "Escombres Voladores",
+    "tipus": "Pel·licula",
+    "genere": "Fantasia",
+    "durada": "Mitja",
+    "estrelles": 4,
+    "idioma_original": "Francès"
+  },
+  {
+    "titol": "404: Amor No Trobat",
+    "tipus": "Sèrie",
+    "genere": "Romàntic",
+    "durada": "Curta",
+    "estrelles": 2,
+    "idioma_original": "Anglès"
+  },
+  {
+    "titol": "Nit de Sang",
+    "tipus": "Pel·licula",
+    "genere": "Terror",
+    "durada": "Llarga",
+    "estrelles": 3,
+    "idioma_original": "Castellà"
+  },
+  {
+    "titol": "Escape Room",
+    "tipus": "Sèrie",
+    "genere": "Thriller",
+    "durada": "Mitja",
+    "estrelles": 5,
+    "idioma_original": "Anglès"
+  },
+  {
+    "titol": "Cançons de Barri",
+    "tipus": "Pel·licula",
+    "genere": "Fantasia",
+    "durada": "Mitja",
+    "estrelles": 1,
+    "idioma_original": "Català"
+  },
+  {
+    "titol": "L’Arxiu Prohibit",
+    "tipus": "Sèrie",
+    "genere": "Documental",
+    "durada": "Curta",
+    "estrelles": 3,
+    "idioma_original": "Català"
+  },
+  {
+    "titol": "A Dues Veus",
+    "tipus": "Pel·licula",
+    "genere": "Drama",
+    "durada": "Curta",
+    "estrelles": 5,
+    "idioma_original": "Català"
+  },
+  {
+    "titol": "Connexió Perduda",
+    "tipus": "Sèrie",
+    "genere": "Misteri",
+    "durada": "Mitja",
+    "estrelles": 1,
+    "idioma_original": "Francès"
+  },
+  {
+    "titol": "Els Anys del Tigre",
+    "tipus": "Pel·licula",
+    "genere": "Aventura",
+    "durada": "Llarga",
+    "estrelles": 4,
+    "idioma_original": "Castellà"
+  }
+]
