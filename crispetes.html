@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crispetes</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin: 20px;
+        }
+        .crispetes {
+            margin: 10px;
+            text-align: center;
+        }
+        .crispetes img {
+            width: 150px;
+            height: auto;
+        }
+        @media print {
+            body {
+                margin: 0;
+                padding: 0;
+            }
+            .container {
+                page-break-inside: avoid;
+            }
+        }
+        .page-break {
+            page-break-before: always;
+            break-before: page;
+        }
+    </style>
+</head>
+<body>
+    <div id="crispetes-container" class="container"></div>
+    <div class="page-break"></div>
+    <div id="crispetes-container-flipped" class="container"></div>
+
+    <script>
+        // Funció per generar crispetes
+        function generarCrispetes(containerId, count, flipped = false) {
+            const container = document.getElementById(containerId);
+            for (let i = 0; i < count; i++) {
+                const crispetaDiv = document.createElement('div');
+                crispetaDiv.className = 'crispetes';
+                if (flipped) {
+                    crispetaDiv.style.transform = 'scaleX(-1)';
+                }
+                const img = document.createElement('img');
+                img.src = 'crispeta.png';
+                img.alt = 'Crispeta';
+                crispetaDiv.appendChild(img);
+                container.appendChild(crispetaDiv);
+            }
+        }
+
+        // Generar crispetes normals
+        generarCrispetes('crispetes-container', 18);
+
+        // Generar crispetes invertides
+        generarCrispetes('crispetes-container-flipped', 18, true);
+    </script>
+</body>
+</html>
