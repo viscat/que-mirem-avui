@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tokens de Joc</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap'); /* Import Poppins font */
+
+        .token {
+            position: relative;
+            display: inline-block;
+            font-size: 100px;
+            margin: 20px;
+            text-align: center;
+            font-family: 'Poppins', 'Arial', sans-serif; /* More stylistic and rounded font */
+        }
+
+        .token .value {
+            position: absolute;
+            top: 41%;
+            right: 40%;
+            color: green;
+            font-size: 40px;
+            font-weight: bold;
+            text-shadow: 
+                2px 0 white, 
+                -2px 0 white, 
+                0 2px white, 
+                0 -2px white, 
+                2px 2px white, 
+                -2px -2px white, 
+                2px -2px white, 
+                -2px 2px white; /* Shadow in 8 directions */
+        }
+
+        .token.thumb-down .value {
+            color: red;
+            top: 20%;
+            right: 32%;
+        }
+        @media print {
+        body {
+            gap: 0.5cm;
+            padding: 0px;
+            margin: 0px;
+            background: white;
+        }
+        }
+        .page-break {
+            page-break-before: always;
+            break-before: page;
+        }
+    </style>
+</head>
+<body>
+    <div class="token">👍<div class="value">+1</div></div>
+    <div class="token">👍<div class="value">+2</div></div>
+    <div class="token">👍<div class="value">+3</div></div>
+    <div class="token thumb-down">👎<div class="value">-1</div></div>
+    <div class="token thumb-down">👎<div class="value">-2</div></div>
+    <div class="token thumb-down">👎<div class="value">-3</div></div>
+
+    <div class="token">👍<div class="value">+1</div></div>
+    <div class="token">👍<div class="value">+2</div></div>
+    <div class="token">👍<div class="value">+3</div></div>
+    <div class="token thumb-down">👎<div class="value">-1</div></div>
+    <div class="token thumb-down">👎<div class="value">-2</div></div>
+    <div class="token thumb-down">👎<div class="value">-3</div></div>
+
+    <div class="token">👍<div class="value">+1</div></div>
+    <div class="token">👍<div class="value">+2</div></div>
+    <div class="token">👍<div class="value">+3</div></div>
+    <div class="token thumb-down">👎<div class="value">-1</div></div>
+    <div class="token thumb-down">👎<div class="value">-2</div></div>
+    <div class="token thumb-down">👎<div class="value">-3</div></div>
+
+    <div class="token">👍<div class="value">+1</div></div>
+    <div class="token">👍<div class="value">+2</div></div>
+    <div class="token">👍<div class="value">+3</div></div>
+    <div class="token thumb-down">👎<div class="value">-1</div></div>
+    <div class="token thumb-down">👎<div class="value">-2</div></div>
+    <div class="token thumb-down">👎<div class="value">-3</div></div>
+    
+    <div class="token">👍<div class="value">+2</div></div>
+    <div class="token">👍<div class="value">+2</div></div>
+    <div class="token">👍<div class="value">+2</div></div>
+    <div class="token">👍<div class="value">+2</div></div>
+    <div class="token">👍<div class="value">+2</div></div>
+    <div class="token">👍<div class="value">+2</div></div>
+    <div class="token">👍<div class="value">+2</div></div>
+    <div class="token">👍<div class="value">+2</div></div>
+    <div class="token">👍<div class="value">+2</div></div>
+    <div class="token">👍<div class="value">+2</div></div>
+    <div class="token">👍<div class="value">+2</div></div>
+    <div class="token">👍<div class="value">+2</div></div>
+
+
+
+    <div class="page-break"></div>
+
+
+    <div class="token thumb-down">👎<div class="value">-3</div></div>
+    <div class="token thumb-down">👎<div class="value">-2</div></div>
+    <div class="token thumb-down">👎<div class="value">-1</div></div>
+    <div class="token">👍<div class="value">+3</div></div>
+    <div class="token">👍<div class="value">+2</div></div>
+    <div class="token">👍<div class="value">+1</div></div>
+
+    <div class="token thumb-down">👎<div class="value">-3</div></div>
+    <div class="token thumb-down">👎<div class="value">-2</div></div>
+    <div class="token thumb-down">👎<div class="value">-1</div></div>
+    <div class="token">👍<div class="value">+3</div></div>
+    <div class="token">👍<div class="value">+2</div></div>
+    <div class="token">👍<div class="value">+1</div></div>
+
+    <div class="token thumb-down">👎<div class="value">-3</div></div>
+    <div class="token thumb-down">👎<div class="value">-2</div></div>
+    <div class="token thumb-down">👎<div class="value">-1</div></div>
+    <div class="token">👍<div class="value">+3</div></div>
+    <div class="token">👍<div class="value">+2</div></div>
+    <div class="token">👍<div class="value">+1</div></div>
+
+    <div class="token thumb-down">👎<div class="value">-3</div></div>
+    <div class="token thumb-down">👎<div class="value">-2</div></div>
+    <div class="token thumb-down">👎<div class="value">-1</div></div>
+    <div class="token">👍<div class="value">+3</div></div>
+    <div class="token">👍<div class="value">+2</div></div>
+    <div class="token">👍<div class="value">+1</div></div>
+
+    <div class="token">👍<div class="value">+2</div></div>
+    <div class="token">👍<div class="value">+2</div></div>
+    <div class="token">👍<div class="value">+2</div></div>
+    <div class="token">👍<div class="value">+2</div></div>
+    <div class="token">👍<div class="value">+2</div></div>
+    <div class="token">👍<div class="value">+2</div></div>
+    <div class="token">👍<div class="value">+2</div></div>
+    <div class="token">👍<div class="value">+2</div></div>
+    <div class="token">👍<div class="value">+2</div></div>
+    <div class="token">👍<div class="value">+2</div></div>
+    <div class="token">👍<div class="value">+2</div></div>
+    <div class="token">👍<div class="value">+2</div></div>
+    
+</body>
+</html>
