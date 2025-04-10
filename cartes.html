@@ -206,10 +206,6 @@ function crearCartaProposta(p) {
   return crearCartaHTML("", html);
 }
 
-function crearCartaContext(c) {
-  return crearCartaHTML(c.titol, `<p><strong>${c.efecte}</strong></p>`);
-}
-
 function crearCartaObjectiu(o) {
   return crearCartaHTML(t("Objectiu"), `<p><strong>${o.descripcio}</strong></p><p>(${o.punts} punt${o.punts > 1 ? 's' : ''})</p>`);
 }
@@ -231,7 +227,6 @@ async function iniciar() {
     carregarJSON("especials.json")
   ]);
   renderSeccioAmbReversos(propostes, "Proposta", crearCartaProposta, "propostes-pagines");
-  renderSeccioAmbReversos(contextos, "Context", crearCartaContext, "contextos-pagines");
   renderSeccioAmbReversos(objectius, "Objectiu", crearCartaObjectiu, "objectius-pagines");
   renderSeccioAmbReversos(especials, "Especial", crearCartaEspecial, "especials-pagines");
 }
