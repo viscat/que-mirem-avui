@@ -215,9 +215,10 @@ function crearCartaObjectiu(o) {
 }
 
 function crearCartaEspecial(e) {
+  const costFix = e.fixa ? ` (${t("Cost fix")})` : "";
   return crearCartaHTML(
     e.titol,
-    `<p><strong>${e.efecte}</strong></p><p>${t('Cost')}: ${e.cost}</p>`
+    `<p><strong>${e.efecte}</strong></p><p>${t('Cost')}: ${e.cost}${costFix}</p>`
   );
 }
 
