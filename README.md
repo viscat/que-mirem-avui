@@ -32,9 +32,17 @@ Mirar el fitxer [`regles.html`](regles.html) per a una explicació detallada de 
 
 ## 🚀 Com utilitzar el projecte
 
-1. Obre els fitxers HTML al navegador per accedir a les cartes, tokens i regles.
-2. Imprimeix els components necessaris per jugar.
-3. Segueix les regles descrites al fitxer `regles.html`.
+1. Aixeca un servidor local per poder obrir els fitxers HTML al navegador, ja que aquests importen altres documents com els JSON o imatges. Pots fer-ho amb la comanda següent:
+
+    ```bash
+    python -m http.server
+    ```
+
+2. Obre els fitxers HTML al navegador accedint a l'adreça proporcionada pel servidor local (normalment `http://localhost:8000`).
+
+3. Imprimeix els components necessaris per jugar.
+
+4. Segueix les regles descrites al fitxer `regles.html`.
 
 ## 🌐 Idiomes
 
