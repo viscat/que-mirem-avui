@@ -1,42 +1,42 @@
 [
   {
-    "titol": "Intercanvi al centre",
+    "titol": "Canvi de plataforma",
     "efecte": "Intercanvia dues propostes del centre de lloc.",
     "cost": 3
   },
   {
-    "titol": "Canvi total d’objectius",
+    "titol": "Canvi d'idees",
     "efecte": "Intercanvia tots els teus objectius pels de l’altre jugador.",
     "cost": 3
   },
   {
     "titol": "Eliminar votació",
-    "efecte": "Elimina un token de votació de qualsevol proposta.",
+    "efecte": "Elimina un like / dislike de qualsevol proposta.",
     "cost": 1
   },
   {
     "titol": "Redirigir votació",
-    "efecte": "Mou un token de votació d’una proposta a una altra.",
+    "efecte": "Mou un like / dislike d’una proposta a una altra.",
     "cost": 2
   },
   {
-    "titol": "Escombrar el centre",
+    "titol": "Vetar proposta",
     "efecte": "Elimina una proposta del centre (només si la diferència de puntuació és ≤ 0).",
     "cost": 1
   },
   {
-    "titol": "Espionatge total",
+    "titol": "Interrogatori",
     "efecte": "Mira un objectiu de l’altre jugador i decideix si intercanviar-lo amb un dels teus.",
     "cost": 2
   },
   {
-    "titol": "Nou objectiu",
+    "titol": "Reflexionar",
     "efecte": "Roba un nou objectiu i descarta un dels teus.",
     "cost": 1,
     "fixa": true
   },
   {
-    "titol": "Nova proposta",
+    "titol": "Fer scroll",
     "efecte": "Afegeix una nova proposta al centre.",
     "cost": 1,
     "fixa": true

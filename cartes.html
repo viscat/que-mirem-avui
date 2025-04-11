@@ -220,9 +220,8 @@ function crearCartaEspecial(e) {
 
 async function iniciar() {
   carregarTraduccions("ca");
-  const [propostes, contextos, objectius, especials] = await Promise.all([
+  const [propostes, objectius, especials] = await Promise.all([
     carregarJSON("propostes.json"),
-    carregarJSON("contextos.json"),
     carregarJSON("objectius.json"),
     carregarJSON("especials.json")
   ]);
