@@ -18,8 +18,8 @@
     }
     .pagina {
       display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(95mm, 1fr));
-      gap: 10mm;
+      grid-template-columns: repeat(auto-fill, minmax(90mm, 1fr));
+      gap: 5mm;
       justify-items: center;
       page-break-after: always;
     }
@@ -96,16 +96,38 @@
       padding: 2px 4px;
       border-radius: 4px;
     }
+    .back-to-index {
+        background-color: #333;
+        color: white;
+        padding: 3rem 0;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+    .back-to-index .link {
+        color: white;
+        text-decoration: none;
+        font-size: 1.2rem;
+        transition: color 0.3s;
+    }
+    .back-to-index .link:hover {
+        color: #007BFF;
+    }
     @media print {
       .carta {
         break-inside: avoid;
         page-break-inside: avoid;
+      }
+      .back-to-index {
+          display: none;
       }
     }
   </style>
 </head>
 <body>
   
+<header class="back-to-index">
+  <a href="index.html" class="link">⬅️ Torna a l'inici</a>
+</header>
 <div class="seccio">
   <div id="propostes-pagines" class="grid-pagines"></div>
 </div>
