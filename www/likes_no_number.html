@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tokens de Joc</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap'); /* Import Poppins font */
+        body {
+            font-family: 'Arial', sans-serif;
+            padding: 0px;
+            margin: 0px;
+        }
+        .token {
+            position: relative;
+            display: inline-block;
+            font-size: 50px;
+            margin: 20px;
+            text-align: center;
+            font-family: 'Poppins', 'Arial', sans-serif; /* More stylistic and rounded font */
+        }
+
+        .token .value {
+            position: absolute;
+            top: 25%;
+            right: 29%;
+            color: white;
+            font-size: 30px;
+            font-weight: bold;
+            text-shadow: 
+                2px 0 black, 
+                -2px 0 black, 
+                0 2px black, 
+                0 -2px black, 
+                2px 2px black, 
+                -2px -2px black, 
+                2px -2px black, 
+                -2px 2px black; /* Shadow in 8 directions */
+        }
+        .token img {
+            width: 75px;
+            height: auto;
+        }
+
+        .token.thumb-down .value {
+            top: 6%;
+            right: 34%;
+        }
+        .back-to-index {
+            background-color: #333;
+            color: white;
+            padding: 3rem 0;
+            text-align: center;
+            margin-bottom: 10px;
+        }
+        .back-to-index .link {
+            color: white;
+            text-decoration: none;
+            font-size: 1.2rem;
+            transition: color 0.3s;
+        }
+        .back-to-index .link:hover {
+            color: #007BFF;
+        }
+        
+        @media print {
+            body {
+                gap: 0.5cm;
+                padding: 0px;
+                margin: 0px;
+                background: white;
+            }
+            .back-to-index {
+                display: none;
+            }
+        }
+        .page-break {
+            page-break-before: always;
+            break-before: page;
+        }
+    </style>
+</head>
+<body>
+    <header class="back-to-index">
+        <a href="index.html" class="link">⬅️ Torna a l'inici</a>
+    </header>
+
+    <div id="tokens-container"></div>
+    <div class="page-break"></div>
+    <div id="tokens-container-reverse"></div>
+
+    <script>
+        // Funció per generar els tokens
+        function generarTokens(containerId, reverse = false) {
+            const container = document.getElementById(containerId);
+            const values = [1, 1, 1, -1, -1, -1]; // Valors dels tokens
+            if (reverse) {
+                values.reverse(); // Invertir l'ordre dels valors
+            }
+            const thumbs = {
+                up: "thumbs_up.png",
+                down: "thumbs_down.png"
+            };
+
+            // Generar 4 sèries de tokens
+            for (let i = 0; i < 4; i++) {
+                values.forEach(value => {
+                    const tokenDiv = document.createElement("div");
+                    tokenDiv.className = "token";
+                    if (value < 0) {
+                        tokenDiv.classList.add("thumb-down");
+                    }
+
+                    const img = document.createElement("img");
+                    img.src = value > 0 ? thumbs.up : thumbs.down;
+                    img.alt = value > 0 ? "Thumbs Up" : "Thumbs Down";
+
+                    tokenDiv.appendChild(img);
+                    container.appendChild(tokenDiv);
+                });
+
+            }
+            
+        }
+        generarTokens("tokens-container");
+        generarTokens("tokens-container-reverse", true);
+
+    </script>
+</body>
+</html>
