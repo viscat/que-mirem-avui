@@ -1,43 +1,44 @@
 [
   {
-    "title": "Cambio de plataforma",
-    "effect": "Intercambia dos propuestas del centro.",
-    "cost": 3
+    "title": "🎭 Cambio de plataforma",
+    "effect": "Intercambia dos propuestas del centro de la mesa.",
+    "cost": 2
   },
   {
-    "title": "Cambio de ideas",
+    "title": "🔄 Revolución de objetivos",
     "effect": "Intercambia todos tus objetivos con los del otro jugador.",
+    "cost": 4
+  },
+  {
+    "title": "🗑️ Contraargumento",
+    "effect": "Elimina un like o dislike de cualquier propuesta.",
+    "cost": 1
+  },
+  {
+    "title": "🎯 Redirigir atención",
+    "effect": "Mueve un like o dislike de una propuesta a otra.",
+    "cost": 2  
+  },
+  {
+    "title": "⚡ Veto express",
+    "effect": "Elimina una propuesta del centro.",
     "cost": 3
   },
   {
-    "title": "Eliminar votación",
-    "effect": "Elimina un like / dislike de cualquier propuesta.",
-    "cost": 1
-  },
-  {
-    "title": "Redirigir votación",
-    "effect": "Mueve un like / dislike de una propuesta a otra.",
-    "cost": 2
-  },
-  {
-    "title": "Vetar propuesta",
-    "effect": "Elimina una propuesta del centro (solo si la diferencia de puntuación es ≤ 0).",
-    "cost": 1
-  },
-  {
-    "title": "Interrogatorio",
+    "title": "🔍 Espionaje",
     "effect": "Mira un objetivo del otro jugador y decide si intercambiarlo con uno de los tuyos.",
-    "cost": 2
+    "cost": 3
   },
   {
-    "title": "Reflexionar",
+    "title": "💭 Reflexión",
     "effect": "Roba un nuevo objetivo y descarta uno de los tuyos.",
     "cost": 1,
     "fixed": true
+
   },
   {
-    "title": "Hacer scroll",
-    "effect": "Añade una nueva propuesta al centro.",
+    "title": "📱 Scroll infinito",
+    "effect": "Añade una nueva propuesta al centro de la mesa.",
     "cost": 1,
     "fixed": true
   }

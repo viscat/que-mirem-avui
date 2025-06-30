@@ -48,12 +48,12 @@
       font-size: 20px;
     }
     .card.back-propuesta {
-      background: linear-gradient(135deg, #ff6b6b, #ee5a52);
+      background: linear-gradient(135deg,rgba(22, 219, 216, 1) 0%, rgba(23, 178, 209, 1) 50%);
       color: white;
       border-color: #d63031;
     }
     .card.back-objetivo {
-      background: linear-gradient(135deg, #74b9ff, #0984e3);
+      background: linear-gradient(135deg,rgba(235, 160, 56, 1) 34%, rgba(255, 230, 66, 1) 100%);
       color: white;
       border-color: #2d3436;
     }
@@ -61,6 +61,53 @@
       background: linear-gradient(135deg, #a29bfe, #6c5ce7);
       color: white;
       border-color: #2d3436;
+    }
+    .card.special-card {
+      background: linear-gradient(135deg, #667eea, #764ba2);
+      color: white;
+      border-color: #4a5568;
+      position: relative;
+    }
+    .special-card .special-title {
+      font-size: 22px;
+      font-weight: bold;
+      margin-bottom: 12px;
+      text-align: center;
+      color: white;
+    }
+    .special-card .special-effect {
+      font-size: 18px;
+      text-align: center;
+      margin-bottom: 16px;
+      line-height: 1.4;
+      flex-grow: 1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+    }
+    .special-card .special-cost {
+      position: absolute;
+      bottom: 8px;
+      left: 50%;
+      transform: translateX(-50%);
+      background: #e74c3c;
+      color: white;
+      padding: 6px 12px;
+      border-radius: 12px;
+      font-weight: bold;
+      font-size: 16px;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.3);
+      display: flex;
+      align-items: center;
+      gap: 4px;
+    }
+    .special-card .special-cost img {
+      width: 16px;
+      height: 16px;
+    }
+    .special-card .special-cost.fixed {
+      background: #8e44ad;
     }
     .card.objective-card {
       width: 60mm;
@@ -119,6 +166,24 @@
       text-align: center;
       font-size: 25px;
       margin-bottom: 4px;
+      line-height: 1;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 2px;
+    }
+    .star {
+      display: inline-block;
+      width: 25px;
+      height: 25px;
+      line-height: 25px;
+      text-align: center;
+      vertical-align: middle;
+    }
+    .star.empty {
+      color: #fff4b0;
+      filter: grayscale(100%);
+      opacity: 0.5;
     }
     .duration-bar {
       display: flex;
@@ -251,7 +316,7 @@ function createCardHTML(title, contentHTML) {
 
 function createBack(tipo) {
   const emoji = {
-    "Propuesta": "🎞️",
+    "Propuesta": "🎞️ 📺",
     "Objetivo": "🎯",
     "Especial": "✨"
   }[tipo] || "🎲";
@@ -299,13 +364,15 @@ function renderSectionWithBacks(data, tipo, renderFunc, containerId, numberOfCar
 }
 
 function createProposalCard(p) {
-  const emoji = p.type === "Movie" ? "🎬" : "📺";
+  const emoji = p.type === "Movie" ? "🎞️" : "📺";
   const levels = { short: 1, medium: 2, long: 3 }[p.duration.toLowerCase()] || 0;
   const barHTML = `<div class=\"duration-bar\">${[0,1,2].map(i => `<div class=\"segment ${i < levels ? 'filled' : ''}\"></div>`).join("")}</div>`;
   const language = p.original_language ? `<div class=\"tags\"><span class=\"tag\">${p.original_language}</span></div>` : "";
 
   // Create 5 stars: first p.stars filled, rest empty
-  const starsHTML = '⭐'.repeat(p.stars) + '<span style="color: #fff4b0;">☆</span>'.repeat(5 - p.stars);
+  const starsHTML = Array.from({length: 5}, (_, i) => 
+    `<span class="star ${i < p.stars ? '' : 'empty'}">⭐</span>`
+  ).join('');
 
   const html = `
     <div class=\"emoji-title\"><span>${emoji}</span><h2>${p.title}</h2></div>
@@ -328,11 +395,21 @@ function createObjectiveCard(o) {
 }
 
 function createSpecialCard(e) {
-  const fixedCost = e.fixed ? ` (${t("cost fix")})` : "";
-  return createCardHTML(
-    e.title,
-    `<p><strong>${e.effect}</strong></p><p>${t('cost')}: ${e.cost}${fixedCost}</p>`
-  );
+  const card = document.createElement("div");
+  card.className = "card special-card";
+  
+  const costClass = e.fixed ? "special-cost fixed" : "special-cost";
+  const costText = e.fixed ? `${e.cost} (${t("cost fix")})` : e.cost;
+  
+  card.innerHTML = `
+    <div class="special-title">${e.title}</div>
+    <div class="special-effect">${e.effect}</div>
+    <div class="${costClass}">
+      <img src="popcorn.png" alt="palomitas">
+      ${costText}
+    </div>
+  `;
+  return card;
 }
 
 async function init() {
