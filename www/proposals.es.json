@@ -1,0 +1,354 @@
+[
+  {
+    "title": "Jurassic Park",
+    "type": "Movie",
+    "genre": "Aventura",
+    "duration": "Long",
+    "stars": 5,
+    "original_language": "Inglés"
+  },
+  {
+    "title": "Breaking Bad",
+    "type": "TV",
+    "genre": "Drama",
+    "duration": "Long",
+    "stars": 5,
+    "original_language": "Inglés"
+  },
+  {
+    "title": "Olvídate de mí",
+    "type": "Movie",
+    "genre": "Romántica",
+    "duration": "Medium",
+    "stars": 4,
+    "original_language": "Inglés"
+  },
+  {
+    "title": "Perdidos",
+    "type": "TV",
+    "genre": "Drama",
+    "duration": "Long",
+    "stars": 4,
+    "original_language": "Inglés"
+  },
+  {
+    "title": "Los Simpson",
+    "type": "TV",
+    "genre": "CoMedium",
+    "duration": "Long",
+    "stars": 4,
+    "original_language": "Inglés"
+  },
+  {
+    "title": "Interstellar",
+    "type": "Movie",
+    "genre": "Ciencia-ficción",
+    "duration": "Long",
+    "stars": 5,
+    "original_language": "Inglés"
+  },
+  {
+    "title": "Juego de Tronos",
+    "type": "TV",
+    "genre": "Fantasía",
+    "duration": "Long",
+    "stars": 5,
+    "original_language": "Inglés"
+  },
+  {
+    "title": "Matrix",
+    "type": "Movie",
+    "genre": "Ciencia-ficción",
+    "duration": "Long",
+    "stars": 5,
+    "original_language": "Inglés"
+  },
+  {
+    "title": "Severance",
+    "type": "TV",
+    "genre": "Thriller",
+    "duration": "Medium",
+    "stars": 5,
+    "original_language": "Inglés"
+  },
+  {
+    "title": "About Time",
+    "type": "Movie",
+    "genre": "Romántica",
+    "duration": "Medium",
+    "stars": 4,
+    "original_language": "Inglés"
+  },
+  {
+    "title": "Dexter",
+    "type": "TV",
+    "genre": "Thriller",
+    "duration": "Long",
+    "stars": 5,
+    "original_language": "Inglés"
+  },
+  {
+    "title": "Origen",
+    "type": "Movie",
+    "genre": "Ciencia-ficción",
+    "duration": "Long",
+    "stars": 4,
+    "original_language": "Inglés"
+  },
+  {
+    "title": "House",
+    "type": "TV",
+    "genre": "Drama",
+    "duration": "Long",
+    "stars": 4,
+    "original_language": "Inglés"
+  },
+  {
+    "title": "Pulp Fiction",
+    "type": "Movie",
+    "genre": "Drama",
+    "duration": "Long",
+    "stars": 5,
+    "original_language": "Inglés"
+  },
+  {
+    "title": "Rick y Morty",
+    "type": "TV",
+    "genre": "Ciencia-ficción",
+    "duration": "Medium",
+    "stars": 4,
+    "original_language": "Inglés"
+  },
+  {
+    "title": "Forrest Gump",
+    "type": "Movie",
+    "genre": "Drama",
+    "duration": "Long",
+    "stars": 5,
+    "original_language": "Inglés"
+  },
+  {
+    "title": "Black Mirror",
+    "type": "TV",
+    "genre": "Ciencia-ficción",
+    "duration": "Medium",
+    "stars": 4,
+    "original_language": "Inglés"
+  },
+  {
+    "title": "El Show de Truman",
+    "type": "Movie",
+    "genre": "Drama",
+    "duration": "Medium",
+    "stars": 4,
+    "original_language": "Inglés"
+  },
+  {
+    "title": "The Office",
+    "type": "TV",
+    "genre": "CoMedium",
+    "duration": "Long",
+    "stars": 4,
+    "original_language": "Inglés"
+  },
+  {
+    "title": "Cadena Perpetua",
+    "type": "Movie",
+    "genre": "Drama",
+    "duration": "Long",
+    "stars": 5,
+    "original_language": "Inglés"
+  },
+  {
+    "title": "El Laberinto del Fauno",
+    "type": "Movie",
+    "genre": "Fantasía",
+    "duration": "Medium",
+    "stars": 5,
+    "original_language": "Castellano"
+  },
+  {
+    "title": "La Casa de Papel",
+    "type": "TV",
+    "genre": "Thriller",
+    "duration": "Long",
+    "stars": 4,
+    "original_language": "Castellano"
+  },
+  {
+    "title": "Érase una vez en Euskadi",
+    "type": "Movie",
+    "genre": "Drama",
+    "duration": "Medium",
+    "stars": 3,
+    "original_language": "Castellano"
+  },
+  {
+    "title": "Élite",
+    "type": "TV",
+    "genre": "Drama",
+    "duration": "Medium",
+    "stars": 2,
+    "original_language": "Castellano"
+  },
+  {
+    "title": "Los Otros",
+    "type": "Movie",
+    "genre": "Terror",
+    "duration": "Medium",
+    "stars": 4,
+    "original_language": "Castellano"
+  },
+  {
+    "title": "Vis a Vis",
+    "type": "TV",
+    "genre": "Drama",
+    "duration": "Long",
+    "stars": 3,
+    "original_language": "Castellano"
+  },
+  {
+    "title": "Abre los Ojos",
+    "type": "Movie",
+    "genre": "Ciencia-ficción",
+    "duration": "Medium",
+    "stars": 4,
+    "original_language": "Castellano"
+  },
+  {
+    "title": "Merlí",
+    "type": "TV",
+    "genre": "Drama",
+    "duration": "Medium",
+    "stars": 3,
+    "original_language": "Catalán"
+  },
+  {
+    "title": "Pa Negre",
+    "type": "Movie",
+    "genre": "Drama",
+    "duration": "Medium",
+    "stars": 2,
+    "original_language": "Catalán"
+  },
+  {
+    "title": "Polseres Vermelles",
+    "type": "TV",
+    "genre": "Drama",
+    "duration": "Medium",
+    "stars": 3,
+    "original_language": "Catalán"
+  },
+  {
+    "title": "El Orfanato",
+    "type": "Movie",
+    "genre": "Terror",
+    "duration": "Medium",
+    "stars": 4,
+    "original_language": "Castellano"
+  },
+  {
+    "title": "Plats Bruts",
+    "type": "TV",
+    "genre": "CoMedium",
+    "duration": "Long",
+    "stars": 5,
+    "original_language": "Catalán"
+  },
+  {
+    "title": "[•REC]",
+    "type": "Movie",
+    "genre": "Terror",
+    "duration": "Medium",
+    "stars": 2,
+    "original_language": "Castellano"
+  },
+  {
+    "title": "Goenkale",
+    "type": "TV",
+    "genre": "Drama",
+    "duration": "Long",
+    "stars": 3,
+    "original_language": "Euskera"
+  },
+  {
+    "title": "Padre no hay más que uno",
+    "type": "Movie",
+    "genre": "CoMedium",
+    "duration": "Medium",
+    "stars": 1,
+    "original_language": "Castellano"
+  },
+  {
+    "title": "Allí Abajo",
+    "type": "TV",
+    "genre": "CoMedium",
+    "duration": "Medium",
+    "stars": 2,
+    "original_language": "Castellano"
+  },
+  {
+    "title": "Toc Toc",
+    "type": "Movie",
+    "genre": "CoMedium",
+    "duration": "Medium",
+    "stars": 2,
+    "original_language": "Castellano"
+  },
+  {
+    "title": "El Ministerio del Tiempo",
+    "type": "TV",
+    "genre": "Ciencia-ficción",
+    "duration": "Medium",
+    "stars": 4,
+    "original_language": "Castellano"
+  },
+  {
+    "title": "Campamento Flipy",
+    "type": "Movie",
+    "genre": "CoMedium",
+    "duration": "Medium",
+    "stars": 1,
+    "original_language": "Castellano"
+  },
+  {
+    "title": "Crematorio",
+    "type": "TV",
+    "genre": "Drama",
+    "duration": "Medium",
+    "stars": 4,
+    "original_language": "Castellano"
+  },
+  {
+    "title": "Torrente",
+    "type": "Movie",
+    "genre": "CoMedium",
+    "duration": "Medium",
+    "stars": 2,
+    "original_language": "Castellano"
+  },
+  {
+    "title": "Altsasu",
+    "type": "TV",
+    "genre": "Drama",
+    "duration": "Medium",
+    "stars": 3,
+    "original_language": "Euskera"
+  },
+  {
+    "title": "Loreak",
+    "type": "Movie",
+    "genre": "Drama",
+    "duration": "Medium",
+    "stars": 4,
+    "original_language": "Euskera"
+  },
+  {
+    "title": "Handia",
+    "type": "Movie",
+    "genre": "Drama",
+    "duration": "Long",
+    "stars": 4,
+    "original_language": "Euskera"
+  }
+] 

@@ -1,0 +1,44 @@
+[
+  {
+    "title": "Cambio de plataforma",
+    "effect": "Intercambia dos propuestas del centro.",
+    "cost": 3
+  },
+  {
+    "title": "Cambio de ideas",
+    "effect": "Intercambia todos tus objetivos con los del otro jugador.",
+    "cost": 3
+  },
+  {
+    "title": "Eliminar votación",
+    "effect": "Elimina un like / dislike de cualquier propuesta.",
+    "cost": 1
+  },
+  {
+    "title": "Redirigir votación",
+    "effect": "Mueve un like / dislike de una propuesta a otra.",
+    "cost": 2
+  },
+  {
+    "title": "Vetar propuesta",
+    "effect": "Elimina una propuesta del centro (solo si la diferencia de puntuación es ≤ 0).",
+    "cost": 1
+  },
+  {
+    "title": "Interrogatorio",
+    "effect": "Mira un objetivo del otro jugador y decide si intercambiarlo con uno de los tuyos.",
+    "cost": 2
+  },
+  {
+    "title": "Reflexionar",
+    "effect": "Roba un nuevo objetivo y descarta uno de los tuyos.",
+    "cost": 1,
+    "fixed": true
+  },
+  {
+    "title": "Hacer scroll",
+    "effect": "Añade una nueva propuesta al centro.",
+    "cost": 1,
+    "fixed": true
+  }
+] 

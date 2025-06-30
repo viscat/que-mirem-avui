@@ -2,10 +2,7 @@
     "proposta": "Proposta",
     "objectiu": "Objectiu",
     "especial": "Especial",
-    "durada_curta": "Curta",
-    "durada_mitja": "Mitja",
-    "durada_llarga": "Llarga",
     "cost": "Cost",
-    "punts": "punts",
+    "punt": "punt",
     "Cost fix": "Cost fix"
   }

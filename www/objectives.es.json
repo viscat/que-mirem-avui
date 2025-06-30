@@ -1,0 +1,90 @@
+[
+  {
+    "description": "Debe tener 1 estrella",
+    "points": 4
+  },
+  {
+    "description": "Debe tener 2 estrellas",
+    "points": 3
+  },
+  {
+    "description": "Debe tener 3 estrellas",
+    "points": 3
+  },
+  {
+    "description": "Debe tener 4 estrellas",
+    "points": 2
+  },
+  {
+    "description": "Debe tener 5 estrellas",
+    "points": 2
+  },
+  {
+    "description": "La duración debe ser corta",
+    "points": 2
+  },
+  {
+    "description": "La duración debe ser larga",
+    "points": 2
+  },
+  {
+    "description": "La duración debe ser media",
+    "points": 2
+  },
+  {
+    "description": "Debe ser una película",
+    "points": 2
+  },
+  {
+    "description": "Debe ser una serie",
+    "points": 2
+  },
+  {
+    "description": "Debe ser del género Aventura",
+    "points": 4
+  },
+  {
+    "description": "Debe ser del género Ciencia-ficción",
+    "points": 4
+  },
+  {
+    "description": "Debe ser del género Comedia",
+    "points": 4
+  },
+  {
+    "description": "Debe ser del género Drama",
+    "points": 4
+  },
+  {
+    "description": "Debe ser del género Fantasía",
+    "points": 4
+  },
+  {
+    "description": "Debe ser del género Romántico",
+    "points": 4
+  },
+  {
+    "description": "Debe ser del género Terror",
+    "points": 4
+  },
+  {
+    "description": "Debe ser del género Thriller",
+    "points": 4
+  },
+  {
+    "description": "Debe ser en Catalán",
+    "points": 6
+  },
+  {
+    "description": "Debe ser en Castellano",
+    "points": 4
+  },
+  {
+    "description": "Debe ser en Inglés",
+    "points": 2
+  },
+  {
+    "description": "Debe ser en Euskera",
+    "points": 6
+  }
+] 

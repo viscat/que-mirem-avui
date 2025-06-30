@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title>Cartas: ¿Qué vemos hoy?</title>
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      padding: 0px;
+      margin: 0px;
+    }
+    .section {
+      page-break-after: always;
+    }
+    .grid-pages {
+      display: flex;
+      flex-direction: column;
+    }
+    .page {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(90mm, 1fr));
+      gap: 5mm;
+      justify-items: center;
+      page-break-after: always;
+    }
+    .card {
+      width: 90mm;
+      height: 60mm;
+      border: 2px solid #000;
+      border-radius: 6px;
+      padding: 4mm;
+      box-sizing: border-box;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      font-size: 20px;
+    }
+    .card h2 {
+      font-size: 25px;
+      margin: 0 0 0.3rem;
+    }
+    .card p {
+      margin: 0.2rem 0;
+    }
+    .emoji-title {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 4px;
+      margin-bottom: 8px;
+      min-height: 40px;
+    }
+    .emoji-title span {
+      margin: 0 0 0.3rem;
+      font-size: 30px;
+      flex-shrink: 0;
+    }
+    .emoji-title h2 {
+      font-size: 25px;
+      margin: 0;
+      line-height: 1.2;
+      text-align: center;
+    }
+    .stars {
+      text-align: center;
+      font-size: 25px;
+      margin-bottom: 4px;
+    }
+    .duration-bar {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 6px auto;
+      width: 90px;
+      height: 24px;
+      border-radius: 12px;
+      overflow: hidden;
+      border: 2px solid #333;
+      background: linear-gradient(90deg, #f0f0f0 0%, #e0e0e0 100%);
+      box-shadow: inset 0 2px 4px rgba(0,0,0,0.1);
+      position: relative;
+      flex-shrink: 0;
+      min-width: 90px;
+    }
+    .duration-bar .segment {
+      flex: 1;
+      height: 100%;
+      background: linear-gradient(180deg, #ddd 0%, #ccc 100%);
+      transition: all 0.3s ease;
+      position: relative;
+    }
+    .duration-bar .segment.filled {
+      background: linear-gradient(180deg, #4CAF50 0%, #45a049 100%);
+      box-shadow: inset 0 1px 3px rgba(255,255,255,0.3);
+    }
+    .duration-bar .segment:not(:last-child) {
+      border-right: 1px solid #999;
+    }
+    .duration-bar .segment.filled:not(:last-child) {
+      border-right: 1px solid #2E7D32;
+    }
+    .tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 2px;
+      margin-top: 4px;
+      font-size: 18px;
+      justify-content: center;
+    }
+    .tag {
+      background: #000;
+      color: #fff;
+      padding: 2px 4px;
+      border-radius: 4px;
+    }
+    .back-to-index {
+        background-color: #333;
+        color: white;
+        padding: 3rem 0;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+    .back-to-index .link {
+        color: white;
+        text-decoration: none;
+        font-size: 1.2rem;
+        transition: color 0.3s;
+    }
+    .back-to-index .link:hover {
+        color: #007BFF;
+    }
+    @media print {
+      .card {
+        break-inside: avoid;
+        page-break-inside: avoid;
+      }
+      .back-to-index {
+          display: none;
+      }
+    }
+  </style>
+</head>
+<body>
+  
+<header class="back-to-index">
+  <a href="index.html" class="link">⬅️ Volver al inicio</a>
+</header>
+<div class="section">
+  <div id="proposals-pages" class="grid-pages"></div>
+</div>
+
+<div class="section">
+  <div id="contexts-pages" class="grid-pages"></div>
+</div>
+
+<div class="section">
+  <div id="objectives-pages" class="grid-pages"></div>
+</div>
+
+<div class="section">
+  <div id="specials-pages" class="grid-pages"></div>
+</div>
+
+
+<script>
+
+let translations = {};
+
+async function loadTranslations(language) {
+  try {
+    const res = await fetch(`${language}.json`);
+    translations = await res.json();
+  } catch (error) {
+    console.error("Error loading translations:", error);
+  }
+}
+
+function t(key) {
+  return translations[key.toLowerCase()] || key;
+}
+
+async function loadJSON(filename) {
+  const res = await fetch(filename);
+  return await res.json();
+}
+
+function createCardHTML(title, contentHTML) {
+  const card = document.createElement("div");
+  card.className = "card";
+  card.innerHTML = `<h2>${title}</h2>${contentHTML}`;
+  return card;
+}
+
+function createBack(tipo) {
+  const emoji = {
+    "Propuesta": "🎞️",
+    "Objetivo": "🎯",
+    "Especial": "✨"
+  }[tipo] || "🎲";
+  const card = document.createElement("div");
+  card.className = "card";
+  card.innerHTML = `<h2>${emoji}<br>${t(tipo)}</h2>`;
+  return card;
+}
+
+function splitIntoPages(array, pageSize) {
+  const pages = [];
+  for (let i = 0; i < array.length; i += pageSize) {
+    pages.push(array.slice(i, i + pageSize));
+  }
+  return pages;
+}
+
+function renderSectionWithBacks(data, tipo, renderFunc, containerId) {
+  const container = document.getElementById(containerId);
+  const cards = data.map(renderFunc);
+  const pages = splitIntoPages(cards, 8);
+
+  pages.forEach(page => {
+    const front = document.createElement("div");
+    front.className = "page";
+    page.forEach(card => front.appendChild(card));
+    container.appendChild(front);
+
+    const back = document.createElement("div");
+    back.className = "page";
+    page.forEach(() => back.appendChild(createBack(tipo)));
+    container.appendChild(back);
+  });
+}
+
+function createProposalCard(p) {
+  const emoji = p.type === "Movie" ? "🎬" : "📺";
+  const levels = { short: 1, medium: 2, long: 3 }[p.duration.toLowerCase()] || 0;
+  const barHTML = `<div class=\"duration-bar\">${[0,1,2].map(i => `<div class=\"segment ${i < levels ? 'filled' : ''}\"></div>`).join("")}</div>`;
+  const language = p.original_language ? `<div class=\"tags\"><span class=\"tag\">${p.original_language}</span></div>` : "";
+
+  // Create 5 stars: first p.stars filled, rest empty
+  const starsHTML = '⭐'.repeat(p.stars) + '<span style="color: #fff4b0;">☆</span>'.repeat(5 - p.stars);
+
+  const html = `
+    <div class=\"emoji-title\"><span>${emoji}</span><h2>${p.title}</h2></div>
+    <div class=\"stars\">${starsHTML}</div>
+    ${barHTML}
+    <p style=\"text-align:center;\"><em>${p.genre}</em></p>
+    <div class=\"tags\">${language}</div>`;
+  return createCardHTML("", html);
+}
+
+function createObjectiveCard(o) {
+  return createCardHTML(t("objectiu"), `<p><strong>${o.description}</strong></p><p>(${o.points} ${t("punt")}${o.points > 1 ? 's' : ''})</p>`);
+}
+
+function createSpecialCard(e) {
+  const fixedCost = e.fixed ? ` (${t("cost fix")})` : "";
+  return createCardHTML(
+    e.title,
+    `<p><strong>${e.effect}</strong></p><p>${t('cost')}: ${e.cost}${fixedCost}</p>`
+  );
+}
+
+async function init() {
+  const language = "es";
+  loadTranslations(language);
+  const [proposals, objectives, specials] = await Promise.all([
+    loadJSON(`proposals.${language}.json`),
+    loadJSON(`objectives.${language}.json`),
+    loadJSON(`specials.${language}.json`)
+  ]);
+  renderSectionWithBacks(proposals, "Propuesta", createProposalCard, "proposals-pages");
+  renderSectionWithBacks(objectives, "Objetivo", createObjectiveCard, "objectives-pages");
+  renderSectionWithBacks(specials, "Especial", createSpecialCard, "specials-pages");
+}
+
+init();
+</script>
+
+</body>
+</html>

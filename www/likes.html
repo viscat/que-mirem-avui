@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="ca">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tokens de Joc</title>
+    <title>Tokens de Juego</title>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap'); /* Import Poppins font */
         body {
@@ -90,19 +90,19 @@
     <div id="tokens-container-reverse"></div>
 
     <script>
-        // Funció per generar els tokens
-        function generarTokens(containerId, reverse = false) {
+        // Función para generar los tokens
+        function generateTokens(containerId, reverse = false) {
             const container = document.getElementById(containerId);
-            const values = [1, 2, 3, -1, -2, -3]; // Valors dels tokens
+            const values = [1, 2, 3, -1, -2, -3]; // Valores de los tokens
             if (reverse) {
-                values.reverse(); // Invertir l'ordre dels valors
+                values.reverse(); // Invertir el orden de los valores
             }
             const thumbs = {
                 up: "thumbs_up.png",
                 down: "thumbs_down.png"
             };
 
-            // Generar 6 sèries de tokens
+            // Generar 6 series de tokens
             for (let i = 0; i < 6; i++) {
                 values.forEach(value => {
                     const tokenDiv = document.createElement("div");
@@ -113,7 +113,7 @@
 
                     const img = document.createElement("img");
                     img.src = value > 0 ? thumbs.up : thumbs.down;
-                    img.alt = value > 0 ? "Thumbs Up" : "Thumbs Down";
+                    img.alt = value > 0 ? "Pulgar Arriba" : "Pulgar Abajo";
 
                     const valueDiv = document.createElement("div");
                     valueDiv.className = "value";
@@ -127,8 +127,8 @@
             }
             
         }
-        generarTokens("tokens-container");
-        generarTokens("tokens-container-reverse", true);
+        generateTokens("tokens-container");
+        generateTokens("tokens-container-reverse", true);
 
     </script>
 </body>

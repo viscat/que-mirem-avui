@@ -6,7 +6,7 @@
 
 El juego incluye los siguientes componentes:
 
-- **Propuestas**: 20 cartas con películas o series para votar.
+- **Propuestas**: 40 cartas con películas o series para votar.
 - **Objetivos**: 24 cartas que definen los objetivos a cumplir para hacer puntos.
 - **Cartas especiales**: 8 acciones únicas que se pueden ejecutar gastando palomitas (2 de ellas son fijas).
 - **Likes/Dislikes**: Marcadores para votar las propuestas (valores de -3 a +3).
@@ -18,13 +18,16 @@ Hacer que la propuesta escogida sea la que mejor encaja con tus **objetivos**, a
 
 ## 🎮 Cómo jugar
 
-Mira el archivo [`regles.html`](regles.html) para una explicación detallada de las reglas y variantes del juego.
+Mira el archivo [`regles.html`](www/regles.html) para una explicación detallada de las reglas y variantes del juego.
 
 ## 📂 Estructura del proyecto
 
-- **`propostes.json`**: Contiene las cartas de propuestas con información como título, tipo, género, duración, estrellas e idioma original.
-- **`objectius.json`**: Define los objetivos que los jugadores pueden cumplir para ganar puntos.
-- **`especials.json`**: Incluye las cartas especiales con acciones únicas y sus costos.
+- **`proposals.json`**: Contiene las cartas de propuestas con información como título, tipo, género, duración, estrellas e idioma original (nombres de campos en inglés, contenido en español).
+- **`objectives.json`**: Define los objetivos que los jugadores pueden cumplir para ganar puntos (nombres de campos en inglés, contenido en español).
+- **`specials.json`**: Incluye las cartas especiales con acciones únicas y sus costos (nombres de campos en inglés, contenido en español).
+- **`en.json`**: Traducciones al inglés para nombres de campos y variables.
+- **`es.json`**: Traducciones al español para nombres de campos y variables.
+- **`ca.json`**: Traducciones al catalán para nombres de campos y variables (archivo original).
 - **`regles.html`**: Guía del juego con las reglas y variantes.
 - **`cartes.html`**: Genera las cartas del juego en formato imprimible.
 - **`crispetes.html`**: Genera las palomitas (moneda del juego) en formato imprimible.
@@ -46,7 +49,12 @@ Mira el archivo [`regles.html`](regles.html) para una explicación detallada de 
 
 ## 🌐 Idiomas
 
-El juego soporta internacionalización. Actualmente, está disponible en catalán (`ca.json`) y se puede ampliar fácilmente añadiendo más archivos de traducción.
+El juego soporta internacionalización. Actualmente, está disponible en:
+- **Español** (`es.json`) - Texto mostrado al usuario
+- **Inglés** (`en.json`) - Nombres de campos y variables
+- **Catalán** (`ca.json`) - Archivo original
+
+Los archivos JSON principales (`proposals.json`, `objectives.json`, `specials.json`) usan nombres de campos en inglés para facilitar el desarrollo, pero el contenido mostrado al usuario está en español.
 
 ## 🛠️ Contribución
 

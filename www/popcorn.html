@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -17,11 +17,11 @@
             justify-content: center;
             margin: 20px;
         }
-        .crispetes {
+        .popcorn {
             margin: 10px;
             text-align: center;
         }
-        .crispetes img {
+        .popcorn img {
             width: 90px;
             height: auto;
         }
@@ -65,33 +65,33 @@
     <header class="back-to-index">
         <a href="index.html" class="link">⬅️ Volver al inicio</a>
     </header>
-    <div id="crispetes-container" class="container"></div>
+    <div id="popcorn-container" class="container"></div>
     <div class="page-break"></div>
-    <div id="crispetes-container-flipped" class="container"></div>
+    <div id="popcorn-container-flipped" class="container"></div>
 
     <script>
-        // Funció per generar crispetes
-        function generarCrispetes(containerId, count, flipped = false) {
+        // Function to generate popcorn
+        function generatePopcorn(containerId, count, flipped = false) {
             const container = document.getElementById(containerId);
             for (let i = 0; i < count; i++) {
-                const crispetaDiv = document.createElement('div');
-                crispetaDiv.className = 'crispetes';
+                const popcornDiv = document.createElement('div');
+                popcornDiv.className = 'popcorn';
                 if (flipped) {
-                    crispetaDiv.style.transform = 'scaleX(-1)';
+                    popcornDiv.style.transform = 'scaleX(-1)';
                 }
                 const img = document.createElement('img');
-                img.src = 'crispeta.png';
-                img.alt = 'Crispeta';
-                crispetaDiv.appendChild(img);
-                container.appendChild(crispetaDiv);
+                img.src = 'popcorn.png';
+                img.alt = 'Palomita';
+                popcornDiv.appendChild(img);
+                container.appendChild(popcornDiv);
             }
         }
 
-        // Generar crispetes normals
-        generarCrispetes('crispetes-container', 48);
+        // Generate normal popcorn
+        generatePopcorn('popcorn-container', 48);
 
-        // Generar crispetes invertides
-        generarCrispetes('crispetes-container-flipped', 48, true);
+        // Generate flipped popcorn
+        generatePopcorn('popcorn-container-flipped', 48, true);
     </script>
 </body>
 </html>
