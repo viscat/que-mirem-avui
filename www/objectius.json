@@ -1,98 +1,90 @@
 [
   {
-    "descripcio": "Ha de tenir 1 estrella",
+    "descripcio": "Debe tener 1 estrella",
+    "punts": 4
+  },
+  {
+    "descripcio": "Debe tener 2 estrellas",
+    "punts": 3
+  },
+  {
+    "descripcio": "Debe tener 3 estrellas",
+    "punts": 3
+  },
+  {
+    "descripcio": "Debe tener 4 estrellas",
+    "punts": 2
+  },
+  {
+    "descripcio": "Debe tener 5 estrellas",
+    "punts": 2
+  },
+  {
+    "descripcio": "La duración debe ser corta",
+    "punts": 2
+  },
+  {
+    "descripcio": "La duración debe ser larga",
+    "punts": 2
+  },
+  {
+    "descripcio": "La duración debe ser media",
+    "punts": 2
+  },
+  {
+    "descripcio": "Debe ser una película",
+    "punts": 2
+  },
+  {
+    "descripcio": "Debe ser una serie",
+    "punts": 2
+  },
+  {
+    "descripcio": "Debe ser del género Aventura",
+    "punts": 4
+  },
+  {
+    "descripcio": "Debe ser del género Ciencia-ficción",
+    "punts": 4
+  },
+  {
+    "descripcio": "Debe ser del género Comedia",
+    "punts": 4
+  },
+  {
+    "descripcio": "Debe ser del género Drama",
+    "punts": 4
+  },
+  {
+    "descripcio": "Debe ser del género Fantasía",
+    "punts": 4
+  },
+  {
+    "descripcio": "Debe ser del género Romántico",
+    "punts": 4
+  },
+  {
+    "descripcio": "Debe ser del género Terror",
+    "punts": 4
+  },
+  {
+    "descripcio": "Debe ser del género Thriller",
+    "punts": 4
+  },
+  {
+    "descripcio": "Debe ser en Catalán",
     "punts": 6
   },
   {
-    "descripcio": "Ha de tenir 2 estrelles",
-    "punts": 6
-  },
-  {
-    "descripcio": "Ha de tenir 3 estrelles",
+    "descripcio": "Debe ser en Castellano",
     "punts": 4
   },
   {
-    "descripcio": "Ha de tenir 4 estrelles",
-    "punts": 4
-  },
-  {
-    "descripcio": "Ha de tenir 5 estrelles",
-    "punts": 6
-  },
-  {
-    "descripcio": "La duració ha de ser curta",
+    "descripcio": "Debe ser en Inglés",
     "punts": 2
   },
   {
-    "descripcio": "La duració ha de ser llarga",
-    "punts": 2
-  },
-  {
-    "descripcio": "La duració ha de ser mitja",
-    "punts": 2
-  },
-  {
-    "descripcio": "Ha de ser una pel·licula",
-    "punts": 2
-  },
-  {
-    "descripcio": "Ha de ser una sèrie",
-    "punts": 2
-  },
-  {
-    "descripcio": "Ha de ser del gènere Aventura",
-    "punts": 4
-  },
-  {
-    "descripcio": "Ha de ser del gènere Ciència-ficció",
-    "punts": 4
-  },
-  {
-    "descripcio": "Ha de ser del gènere Comèdia",
-    "punts": 4
-  },
-  {
-    "descripcio": "Ha de ser del gènere Documental",
-    "punts": 4
-  },
-  {
-    "descripcio": "Ha de ser del gènere Drama",
-    "punts": 4
-  },
-  {
-    "descripcio": "Ha de ser del gènere Fantasia",
-    "punts": 4
-  },
-  {
-    "descripcio": "Ha de ser del gènere Misteri",
-    "punts": 4
-  },
-  {
-    "descripcio": "Ha de ser del gènere Romàntic",
-    "punts": 4
-  },
-  {
-    "descripcio": "Ha de ser del gènere Terror",
-    "punts": 4
-  },
-  {
-    "descripcio": "Ha de ser del gènere Thriller",
-    "punts": 4
-  },
-  {
-    "descripcio": "Ha de ser en Català",
-    "punts": 4
-  },
-  {
-    "descripcio": "Ha de ser en Castellà",
-    "punts": 4
-  },
-  {
-    "descripcio": "Ha de ser en Anglès",
-    "punts": 2
-  },
-  {
-    "descripcio": "Ha de ser en Francès",
+    "descripcio": "Debe ser en Euskera",
     "punts": 6
   }
 ]

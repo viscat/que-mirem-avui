@@ -1,43 +1,43 @@
 [
   {
-    "titol": "Canvi de plataforma",
-    "efecte": "Intercanvia dues propostes del centre de lloc.",
+    "titol": "Cambio de plataforma",
+    "efecte": "Intercambia dos propuestas del centro.",
     "cost": 3
   },
   {
-    "titol": "Canvi d'idees",
-    "efecte": "Intercanvia tots els teus objectius pels de l’altre jugador.",
+    "titol": "Cambio de ideas",
+    "efecte": "Intercambia todos tus objetivos con los del otro jugador.",
     "cost": 3
   },
   {
-    "titol": "Eliminar votació",
-    "efecte": "Elimina un like / dislike de qualsevol proposta.",
+    "titol": "Eliminar votación",
+    "efecte": "Elimina un like / dislike de cualquier propuesta.",
     "cost": 1
   },
   {
-    "titol": "Redirigir votació",
-    "efecte": "Mou un like / dislike d’una proposta a una altra.",
+    "titol": "Redirigir votación",
+    "efecte": "Mueve un like / dislike de una propuesta a otra.",
     "cost": 2
   },
   {
-    "titol": "Vetar proposta",
-    "efecte": "Elimina una proposta del centre (només si la diferència de puntuació és ≤ 0).",
+    "titol": "Vetar propuesta",
+    "efecte": "Elimina una propuesta del centro (solo si la diferencia de puntuación es ≤ 0).",
     "cost": 1
   },
   {
-    "titol": "Interrogatori",
-    "efecte": "Mira un objectiu de l’altre jugador i decideix si intercanviar-lo amb un dels teus.",
+    "titol": "Interrogatorio",
+    "efecte": "Mira un objetivo del otro jugador y decide si intercambiarlo con uno de los tuyos.",
     "cost": 2
   },
   {
     "titol": "Reflexionar",
-    "efecte": "Roba un nou objectiu i descarta un dels teus.",
+    "efecte": "Roba un nuevo objetivo y descarta uno de los tuyos.",
     "cost": 1,
     "fixa": true
   },
   {
-    "titol": "Fer scroll",
-    "efecte": "Afegeix una nova proposta al centre.",
+    "titol": "Hacer scroll",
+    "efecte": "Añade una nueva propuesta al centro.",
     "cost": 1,
     "fixa": true
   }

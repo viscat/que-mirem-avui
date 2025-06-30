@@ -2,7 +2,7 @@
 <html lang="ca">
 <head>
   <meta charset="UTF-8" />
-  <title>Cartes del Joc: Què Mirem Avui?</title>
+  <title>Cartas: ¿Qué miramos hoy?</title>
   <style>
     body {
       font-family: 'Arial', sans-serif;
@@ -126,7 +126,7 @@
 <body>
   
 <header class="back-to-index">
-  <a href="index.html" class="link">⬅️ Torna a l'inici</a>
+  <a href="index.html" class="link">⬅️ Volver al inicio</a>
 </header>
 <div class="seccio">
   <div id="propostes-pagines" class="grid-pagines"></div>
@@ -213,8 +213,8 @@ function renderSeccioAmbReversos(dades, tipus, renderFunc, containerId) {
 }
 
 function crearCartaProposta(p) {
-  const emoji = p.tipus === "Pel·licula" ? "🎬" : "📺";
-  const nivells = { curta: 1, mitja: 2, llarga: 3 }[p.durada.toLowerCase()] || 0;
+  const emoji = p.tipus === "Pelicula" ? "🎬" : "📺";
+  const nivells = { corta: 1, media: 2, larga: 3 }[p.durada.toLowerCase()] || 0;
   const barraHTML = `<div class=\"barra-durada\">${[0,1,2].map(i => `<div class=\"segment ${i < nivells ? 'ple' : ''}\"></div>`).join("")}</div>`;
   const idioma = p.idioma_original ? `<div class=\"tags\"><span class=\"tag\">${p.idioma_original}</span></div>` : "";
 
@@ -228,7 +228,7 @@ function crearCartaProposta(p) {
 }
 
 function crearCartaObjectiu(o) {
-  return crearCartaHTML(t("Objectiu"), `<p><strong>${o.descripcio}</strong></p><p>(${o.punts} punt${o.punts > 1 ? 's' : ''})</p>`);
+  return crearCartaHTML(t("Objectiu"), `<p><strong>${o.descripcio}</strong></p><p>(${o.punts} punto${o.punts > 1 ? 's' : ''})</p>`);
 }
 
 function crearCartaEspecial(e) {
@@ -240,14 +240,14 @@ function crearCartaEspecial(e) {
 }
 
 async function iniciar() {
-  carregarTraduccions("ca");
+  carregarTraduccions("es");
   const [propostes, objectius, especials] = await Promise.all([
     carregarJSON("propostes.json"),
     carregarJSON("objectius.json"),
     carregarJSON("especials.json")
   ]);
-  renderSeccioAmbReversos(propostes, "Proposta", crearCartaProposta, "propostes-pagines");
-  renderSeccioAmbReversos(objectius, "Objectiu", crearCartaObjectiu, "objectius-pagines");
+  renderSeccioAmbReversos(propostes, "Propuesta", crearCartaProposta, "propostes-pagines");
+  renderSeccioAmbReversos(objectius, "Objetivo", crearCartaObjectiu, "objectius-pagines");
   renderSeccioAmbReversos(especials, "Especial", crearCartaEspecial, "especials-pagines");
 }
 

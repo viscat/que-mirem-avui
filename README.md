@@ -1,64 +1,64 @@
-# Què Mirem Avui?
+# ¿Qué Vemos Hoy?
 
-**Què Mirem Avui?** és un joc de taula per a dues persones que intenta resoldre el dilema de decidir què veure. Amb cartes de propostes, objectius, accions especials, likes, dislikes i crispetes, els jugadors hauran de negociar, competir i utilitzar estratègies per aconseguir que la seva proposta preferida sigui la guanyadora.
+**¿Qué Vemos Hoy?** es un juego de mesa para dos personas que intenta resolver el dilema de decidir qué ver. Con cartas de propuestas, objetivos, acciones especiales, likes, dislikes y palomitas, los jugadores tendrán que negociar, competir y utilizar estrategias para conseguir que su propuesta preferida sea la ganadora.
 
-## 📦 Elements del joc
+## 📦 Elementos del juego
 
-El joc inclou els següents components:
+El juego incluye los siguientes componentes:
 
-- **Propostes**: 20 cartes amb pel·lícules o sèries per votar.
-- **Objectius**: 24 cartes que defineixen els objectius a complir per fer punts.
-- **Cartes especials**: 8 accions úniques que es poden executar gastant crispetes (2 d'elles són fixes).
-- **Likes/Dislikes**: Marcadors per votar les propostes (valors de -3 a +3).
-- **Crispetes**: La moneda del joc per executar accions especials.
+- **Propuestas**: 20 cartas con películas o series para votar.
+- **Objetivos**: 24 cartas que definen los objetivos a cumplir para hacer puntos.
+- **Cartas especiales**: 8 acciones únicas que se pueden ejecutar gastando palomitas (2 de ellas son fijas).
+- **Likes/Dislikes**: Marcadores para votar las propuestas (valores de -3 a +3).
+- **Palomitas**: La moneda del juego para ejecutar acciones especiales.
 
-## ✨ Objectiu del joc
+## ✨ Objetivo del juego
 
-Fer que la proposta escollida sigui la que millor encaixa amb els teus **objectius**, acumulant la màxima puntuació possible.
+Hacer que la propuesta escogida sea la que mejor encaja con tus **objetivos**, acumulando la máxima puntuación posible.
 
-## 🎮 Com jugar
+## 🎮 Cómo jugar
 
-Mirar el fitxer [`regles.html`](regles.html) per a una explicació detallada de les regles i variants del joc.
+Mira el archivo [`regles.html`](regles.html) para una explicación detallada de las reglas y variantes del juego.
 
-## 📂 Estructura del projecte
+## 📂 Estructura del proyecto
 
-- **`propostes.json`**: Conté les cartes de propostes amb informació com títol, tipus, gènere, durada, estrelles i idioma original.
-- **`objectius.json`**: Defineix els objectius que els jugadors poden complir per guanyar punts.
-- **`especials.json`**: Inclou les cartes especials amb accions úniques i els seus costos.
-- **`regles.html`**: Guia del joc amb les regles i variants.
-- **`cartes.html`**: Genera les cartes del joc en format imprimible.
-- **`crispetes.html`**: Genera les crispetes (moneda del joc) en format imprimible.
-- **`likes.html`**: Genera els tokens de votació (likes/dislikes) en format imprimible.
+- **`propostes.json`**: Contiene las cartas de propuestas con información como título, tipo, género, duración, estrellas e idioma original.
+- **`objectius.json`**: Define los objetivos que los jugadores pueden cumplir para ganar puntos.
+- **`especials.json`**: Incluye las cartas especiales con acciones únicas y sus costos.
+- **`regles.html`**: Guía del juego con las reglas y variantes.
+- **`cartes.html`**: Genera las cartas del juego en formato imprimible.
+- **`crispetes.html`**: Genera las palomitas (moneda del juego) en formato imprimible.
+- **`likes.html`**: Genera los tokens de votación (likes/dislikes) en formato imprimible.
 
-## 🚀 Com utilitzar el projecte
+## 🚀 Cómo utilizar el proyecto
 
-1. Aixeca un servidor local per poder obrir els fitxers HTML al navegador, ja que aquests importen altres documents com els JSON o imatges. Pots fer-ho amb la comanda següent:
+1. Levanta un servidor local para poder abrir los archivos HTML en el navegador, ya que estos importan otros documentos como los JSON o imágenes. Puedes hacerlo con el comando siguiente:
 
     ```bash
     python -m http.server
     ```
 
-2. Obre els fitxers HTML al navegador accedint a l'adreça proporcionada pel servidor local (normalment `http://localhost:8000`).
+2. Abre los archivos HTML en el navegador accediendo a la dirección proporcionada por el servidor local (normalmente `http://localhost:8000`).
 
-3. Imprimeix els components necessaris per jugar.
+3. Imprime los componentes necesarios para jugar.
 
-4. Segueix les regles descrites al fitxer `regles.html`.
+4. Sigue las reglas descritas en el archivo `regles.html`.
 
-## 🌐 Idiomes
+## 🌐 Idiomas
 
-El joc suporta internacionalització. Actualment, està disponible en català (`ca.json`) i es pot ampliar fàcilment afegint més fitxers de traducció.
+El juego soporta internacionalización. Actualmente, está disponible en catalán (`ca.json`) y se puede ampliar fácilmente añadiendo más archivos de traducción.
 
-## 🛠️ Contribució
+## 🛠️ Contribución
 
-Si vols contribuir al projecte, pots:
-- Afegir noves cartes de propostes, objectius o accions especials.
-- Millorar les regles o afegir variants.
-- Traduir el joc a altres idiomes.
+Si quieres contribuir al proyecto, puedes:
+- Añadir nuevas cartas de propuestas, objetivos o acciones especiales.
+- Mejorar las reglas o añadir variantes.
+- Traducir el juego a otros idiomas.
 
-## 📜 Llicència
+## 📜 Licencia
 
-Aquest projecte està sota una llicència [MIT](https://opensource.org/licenses/MIT). Pots utilitzar-lo, modificar-lo i compartir-lo lliurement.
+Este proyecto está bajo una licencia [MIT](https://opensource.org/licenses/MIT). Puedes utilizarlo, modificarlo y compartirlo libremente.
 
 ---
 
-**Fet per decidir sense discutir... o discutint amb estil!**
+**Hecho para decidir sin discutir... ¡o discutiendo con estilo!**

@@ -1,162 +1,354 @@
 [
   {
-    "titol": "El Gran Viatge",
-    "tipus": "Pel·licula",
+    "titol": "Jurassic Park",
+    "tipus": "Película",
     "genere": "Aventura",
-    "durada": "Llarga",
-    "estrelles": 3,
-    "idioma_original": "Anglès"
-  },
-  {
-    "titol": "Coses Estranyes",
-    "tipus": "Sèrie",
-    "genere": "Ciència-ficció",
-    "durada": "Mitja",
-    "estrelles": 2,
-    "idioma_original": "Anglès"
-  },
-  {
-    "titol": "L’Amor Desordenat",
-    "tipus": "Pel·licula",
-    "genere": "Romàntic",
-    "durada": "Mitja",
-    "estrelles": 3,
-    "idioma_original": "Anglès"
-  },
-  {
-    "titol": "Malsons Quotidians",
-    "tipus": "Sèrie",
-    "genere": "Terror",
-    "durada": "Curta",
-    "estrelles": 3,
-    "idioma_original": "Castellà"
-  },
-  {
-    "titol": "Píxels i Nostàlgia",
-    "tipus": "Sèrie",
-    "genere": "Comèdia",
-    "durada": "Curta",
-    "estrelles": 3,
-    "idioma_original": "Anglès"
-  },
-  {
-    "titol": "Profunditats",
-    "tipus": "Pel·licula",
-    "genere": "Thriller",
-    "durada": "Llarga",
-    "estrelles": 4,
-    "idioma_original": "Francès"
-  },
-  {
-    "titol": "Els Dies Llargs",
-    "tipus": "Sèrie",
-    "genere": "Drama",
-    "durada": "Llarga",
-    "estrelles": 3,
-    "idioma_original": "Anglès"
-  },
-  {
-    "titol": "Supernova",
-    "tipus": "Pel·licula",
-    "genere": "Ciència-ficció",
-    "durada": "Curta",
-    "estrelles": 4,
-    "idioma_original": "Anglès"
-  },
-  {
-    "titol": "Riures Enllaunats",
-    "tipus": "Sèrie",
-    "genere": "Comèdia",
-    "durada": "Mitja",
-    "estrelles": 3,
-    "idioma_original": "Anglès"
-  },
-  {
-    "titol": "L’Ombra del Passat",
-    "tipus": "Pel·licula",
-    "genere": "Misteri",
-    "durada": "Llarga",
-    "estrelles": 4,
-    "idioma_original": "Castellà"
-  },
-  {
-    "titol": "Bon Appétit",
-    "tipus": "Sèrie",
-    "genere": "Documental",
-    "durada": "Curta",
-    "estrelles": 2,
-    "idioma_original": "Castellà"
-  },
-  {
-    "titol": "Escombres Voladores",
-    "tipus": "Pel·licula",
-    "genere": "Fantasia",
-    "durada": "Mitja",
-    "estrelles": 4,
-    "idioma_original": "Francès"
-  },
-  {
-    "titol": "404: Amor No Trobat",
-    "tipus": "Sèrie",
-    "genere": "Romàntic",
-    "durada": "Curta",
-    "estrelles": 2,
-    "idioma_original": "Anglès"
-  },
-  {
-    "titol": "Nit de Sang",
-    "tipus": "Pel·licula",
-    "genere": "Terror",
-    "durada": "Llarga",
-    "estrelles": 3,
-    "idioma_original": "Castellà"
-  },
-  {
-    "titol": "Escape Room",
-    "tipus": "Sèrie",
-    "genere": "Thriller",
-    "durada": "Mitja",
+    "durada": "Larga",
     "estrelles": 5,
-    "idioma_original": "Anglès"
+    "idioma_original": "Inglés"
   },
   {
-    "titol": "Cançons de Barri",
-    "tipus": "Pel·licula",
-    "genere": "Fantasia",
-    "durada": "Mitja",
-    "estrelles": 1,
-    "idioma_original": "Català"
-  },
-  {
-    "titol": "L’Arxiu Prohibit",
-    "tipus": "Sèrie",
-    "genere": "Documental",
-    "durada": "Curta",
-    "estrelles": 3,
-    "idioma_original": "Català"
-  },
-  {
-    "titol": "A Dues Veus",
-    "tipus": "Pel·licula",
+    "titol": "Breaking Bad",
+    "tipus": "Serie",
     "genere": "Drama",
-    "durada": "Curta",
+    "durada": "Larga",
     "estrelles": 5,
-    "idioma_original": "Català"
+    "idioma_original": "Inglés"
   },
   {
-    "titol": "Connexió Perduda",
-    "tipus": "Sèrie",
-    "genere": "Misteri",
-    "durada": "Mitja",
-    "estrelles": 1,
-    "idioma_original": "Francès"
-  },
-  {
-    "titol": "Els Anys del Tigre",
-    "tipus": "Pel·licula",
-    "genere": "Aventura",
-    "durada": "Llarga",
+    "titol": "Olvídate de mí",
+    "tipus": "Película",
+    "genere": "Romántico",
+    "durada": "Media",
     "estrelles": 4,
-    "idioma_original": "Castellà"
+    "idioma_original": "Inglés"
+  },
+  {
+    "titol": "Perdidos",
+    "tipus": "Serie",
+    "genere": "Drama",
+    "durada": "Larga",
+    "estrelles": 4,
+    "idioma_original": "Inglés"
+  },
+  {
+    "titol": "Los Simpson",
+    "tipus": "Serie",
+    "genere": "Comedia",
+    "durada": "Larga",
+    "estrelles": 4,
+    "idioma_original": "Inglés"
+  },
+  {
+    "titol": "Interstellar",
+    "tipus": "Película",
+    "genere": "Ciencia-ficción",
+    "durada": "Larga",
+    "estrelles": 5,
+    "idioma_original": "Inglés"
+  },
+  {
+    "titol": "Juego de Tronos",
+    "tipus": "Serie",
+    "genere": "Fantasía",
+    "durada": "Larga",
+    "estrelles": 5,
+    "idioma_original": "Inglés"
+  },
+  {
+    "titol": "Matrix",
+    "tipus": "Película",
+    "genere": "Ciencia-ficción",
+    "durada": "Larga",
+    "estrelles": 5,
+    "idioma_original": "Inglés"
+  },
+  {
+    "titol": "Severance",
+    "tipus": "Serie",
+    "genere": "Thriller",
+    "durada": "Media",
+    "estrelles": 5,
+    "idioma_original": "Inglés"
+  },
+  {
+    "titol": "El Padrino",
+    "tipus": "Película",
+    "genere": "Drama",
+    "durada": "Larga",
+    "estrelles": 5,
+    "idioma_original": "Inglés"
+  },
+  {
+    "titol": "Dexter",
+    "tipus": "Serie",
+    "genere": "Thriller",
+    "durada": "Larga",
+    "estrelles": 4,
+    "idioma_original": "Inglés"
+  },
+  {
+    "titol": "Origen",
+    "tipus": "Película",
+    "genere": "Ciencia-ficción",
+    "durada": "Larga",
+    "estrelles": 5,
+    "idioma_original": "Inglés"
+  },
+  {
+    "titol": "House",
+    "tipus": "Serie",
+    "genere": "Drama",
+    "durada": "Larga",
+    "estrelles": 4,
+    "idioma_original": "Inglés"
+  },
+  {
+    "titol": "Pulp Fiction",
+    "tipus": "Película",
+    "genere": "Drama",
+    "durada": "Larga",
+    "estrelles": 5,
+    "idioma_original": "Inglés"
+  },
+  {
+    "titol": "Rick y Morty",
+    "tipus": "Serie",
+    "genere": "Ciencia-ficción",
+    "durada": "Media",
+    "estrelles": 4,
+    "idioma_original": "Inglés"
+  },
+  {
+    "titol": "Forrest Gump",
+    "tipus": "Película",
+    "genere": "Drama",
+    "durada": "Larga",
+    "estrelles": 5,
+    "idioma_original": "Inglés"
+  },
+  {
+    "titol": "Black Mirror",
+    "tipus": "Serie",
+    "genere": "Ciencia-ficción",
+    "durada": "Media",
+    "estrelles": 4,
+    "idioma_original": "Inglés"
+  },
+  {
+    "titol": "El Show de Truman",
+    "tipus": "Película",
+    "genere": "Drama",
+    "durada": "Media",
+    "estrelles": 4,
+    "idioma_original": "Inglés"
+  },
+  {
+    "titol": "The Office",
+    "tipus": "Serie",
+    "genere": "Comedia",
+    "durada": "Larga",
+    "estrelles": 4,
+    "idioma_original": "Inglés"
+  },
+  {
+    "titol": "Cadena Perpetua",
+    "tipus": "Película",
+    "genere": "Drama",
+    "durada": "Larga",
+    "estrelles": 5,
+    "idioma_original": "Inglés"
+  },
+  {
+    "titol": "El Laberinto del Fauno",
+    "tipus": "Película",
+    "genere": "Fantasía",
+    "durada": "Media",
+    "estrelles": 5,
+    "idioma_original": "Castellano"
+  },
+  {
+    "titol": "La Casa de Papel",
+    "tipus": "Serie",
+    "genere": "Thriller",
+    "durada": "Larga",
+    "estrelles": 4,
+    "idioma_original": "Castellano"
+  },
+  {
+    "titol": "Érase una vez en Euskadi",
+    "tipus": "Película",
+    "genere": "Drama",
+    "durada": "Media",
+    "estrelles": 3,
+    "idioma_original": "Castellano"
+  },
+  {
+    "titol": "Élite",
+    "tipus": "Serie",
+    "genere": "Drama",
+    "durada": "Media",
+    "estrelles": 2,
+    "idioma_original": "Castellano"
+  },
+  {
+    "titol": "Los Otros",
+    "tipus": "Película",
+    "genere": "Terror",
+    "durada": "Media",
+    "estrelles": 4,
+    "idioma_original": "Castellano"
+  },
+  {
+    "titol": "Vis a Vis",
+    "tipus": "Serie",
+    "genere": "Drama",
+    "durada": "Larga",
+    "estrelles": 3,
+    "idioma_original": "Castellano"
+  },
+  {
+    "titol": "Abre los Ojos",
+    "tipus": "Película",
+    "genere": "Ciencia-ficción",
+    "durada": "Media",
+    "estrelles": 4,
+    "idioma_original": "Castellano"
+  },
+  {
+    "titol": "Merlí",
+    "tipus": "Serie",
+    "genere": "Drama",
+    "durada": "Media",
+    "estrelles": 3,
+    "idioma_original": "Catalán"
+  },
+  {
+    "titol": "Pa Negre",
+    "tipus": "Película",
+    "genere": "Drama",
+    "durada": "Media",
+    "estrelles": 2,
+    "idioma_original": "Catalán"
+  },
+  {
+    "titol": "Polseres Vermelles",
+    "tipus": "Serie",
+    "genere": "Drama",
+    "durada": "Media",
+    "estrelles": 3,
+    "idioma_original": "Catalán"
+  },
+  {
+    "titol": "El Orfanato",
+    "tipus": "Película",
+    "genere": "Terror",
+    "durada": "Media",
+    "estrelles": 4,
+    "idioma_original": "Castellano"
+  },
+  {
+    "titol": "Plats Bruts",
+    "tipus": "Serie",
+    "genere": "Comedia",
+    "durada": "Larga",
+    "estrelles": 5,
+    "idioma_original": "Catalán"
+  },
+  {
+    "titol": "[•REC]",
+    "tipus": "Película",
+    "genere": "Terror",
+    "durada": "Media",
+    "estrelles": 2,
+    "idioma_original": "Castellano"
+  },
+  {
+    "titol": "Goenkale",
+    "tipus": "Serie",
+    "genere": "Drama",
+    "durada": "Larga",
+    "estrelles": 3,
+    "idioma_original": "Euskera"
+  },
+  {
+    "titol": "Padre no hay más que uno",
+    "tipus": "Película",
+    "genere": "Comedia",
+    "durada": "Media",
+    "estrelles": 1,
+    "idioma_original": "Castellano"
+  },
+  {
+    "titol": "Allí Abajo",
+    "tipus": "Serie",
+    "genere": "Comedia",
+    "durada": "Media",
+    "estrelles": 2,
+    "idioma_original": "Castellano"
+  },
+  {
+    "titol": "Toc Toc",
+    "tipus": "Película",
+    "genere": "Comedia",
+    "durada": "Media",
+    "estrelles": 2,
+    "idioma_original": "Castellano"
+  },
+  {
+    "titol": "El Ministerio del Tiempo",
+    "tipus": "Serie",
+    "genere": "Ciencia-ficción",
+    "durada": "Media",
+    "estrelles": 4,
+    "idioma_original": "Castellano"
+  },
+  {
+    "titol": "Campamento Flipy",
+    "tipus": "Película",
+    "genere": "Comedia",
+    "durada": "Media",
+    "estrelles": 1,
+    "idioma_original": "Castellano"
+  },
+  {
+    "titol": "Crematorio",
+    "tipus": "Serie",
+    "genere": "Drama",
+    "durada": "Media",
+    "estrelles": 4,
+    "idioma_original": "Castellano"
+  },
+  {
+    "titol": "Aquí llega Condemor, el pecador de la pradera",
+    "tipus": "Película",
+    "genere": "Comedia",
+    "durada": "Media",
+    "estrelles": 1,
+    "idioma_original": "Castellano"
+  },
+  {
+    "titol": "Altsasu",
+    "tipus": "Serie",
+    "genere": "Drama",
+    "durada": "Media",
+    "estrelles": 3,
+    "idioma_original": "Euskera"
+  },
+  {
+    "titol": "Loreak",
+    "tipus": "Película",
+    "genere": "Drama",
+    "durada": "Media",
+    "estrelles": 4,
+    "idioma_original": "Euskera"
+  },
+  {
+    "titol": "Handia",
+    "tipus": "Película",
+    "genere": "Drama",
+    "durada": "Larga",
+    "estrelles": 4,
+    "idioma_original": "Euskera"
   }
 ]
