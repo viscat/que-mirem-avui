@@ -18,7 +18,7 @@
   {
     "titol": "Olvídate de mí",
     "tipus": "Película",
-    "genere": "Romántico",
+    "genere": "Romántica",
     "durada": "Media",
     "estrelles": 4,
     "idioma_original": "Inglés"
@@ -72,11 +72,11 @@
     "idioma_original": "Inglés"
   },
   {
-    "titol": "El Padrino",
+    "titol": "About Time",
     "tipus": "Película",
-    "genere": "Drama",
-    "durada": "Larga",
-    "estrelles": 5,
+    "genere": "Romántica",
+    "durada": "Media",
+    "estrelles": 4,
     "idioma_original": "Inglés"
   },
   {
@@ -84,7 +84,7 @@
     "tipus": "Serie",
     "genere": "Thriller",
     "durada": "Larga",
-    "estrelles": 4,
+    "estrelles": 5,
     "idioma_original": "Inglés"
   },
   {
@@ -92,7 +92,7 @@
     "tipus": "Película",
     "genere": "Ciencia-ficción",
     "durada": "Larga",
-    "estrelles": 5,
+    "estrelles": 4,
     "idioma_original": "Inglés"
   },
   {
