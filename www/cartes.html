@@ -219,7 +219,7 @@ function crearCartaProposta(p) {
   const idioma = p.idioma_original ? `<div class=\"tags\"><span class=\"tag\">${p.idioma_original}</span></div>` : "";
 
   // Crear 5 estrelles: les primeres p.estrelles rellenes, la resta buides
-  const estrellesHTML = '⭐'.repeat(p.estrelles) + '<span style="color: #ffd700;">☆</span>'.repeat(5 - p.estrelles);
+  const estrellesHTML = '⭐'.repeat(p.estrelles) + '<span style="color: #fff4b0;">☆</span>'.repeat(5 - p.estrelles);
 
   const html = `
     <div class=\"emoji-titol\"><span>${emoji}</span><h2>${p.titol}</h2></div>
