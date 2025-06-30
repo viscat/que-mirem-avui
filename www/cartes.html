@@ -213,14 +213,17 @@ function renderSeccioAmbReversos(dades, tipus, renderFunc, containerId) {
 }
 
 function crearCartaProposta(p) {
-  const emoji = p.tipus === "Pelicula" ? "🎬" : "📺";
+  const emoji = p.tipus === "Película" ? "🎬" : "📺";
   const nivells = { corta: 1, media: 2, larga: 3 }[p.durada.toLowerCase()] || 0;
   const barraHTML = `<div class=\"barra-durada\">${[0,1,2].map(i => `<div class=\"segment ${i < nivells ? 'ple' : ''}\"></div>`).join("")}</div>`;
   const idioma = p.idioma_original ? `<div class=\"tags\"><span class=\"tag\">${p.idioma_original}</span></div>` : "";
 
+  // Crear 5 estrelles: les primeres p.estrelles rellenes, la resta buides
+  const estrellesHTML = '⭐'.repeat(p.estrelles) + '<span style="color: #ffd700;">☆</span>'.repeat(5 - p.estrelles);
+
   const html = `
     <div class=\"emoji-titol\"><span>${emoji}</span><h2>${p.titol}</h2></div>
-    <div class=\"estrelles\">${'⭐'.repeat(p.estrelles)}</div>
+    <div class=\"estrelles\">${estrellesHTML}</div>
     ${barraHTML}
     <p style=\"text-align:center;\"><em>${p.genere}</em></p>
     <div class=\"tags\">${idioma}</div>`;
