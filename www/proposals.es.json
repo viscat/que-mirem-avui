@@ -34,7 +34,7 @@
   {
     "title": "Los Simpson",
     "type": "TV",
-    "genre": "CoMedium",
+    "genre": "Comedia",
     "duration": "Long",
     "stars": 4,
     "original_language": "Inglés"
@@ -146,7 +146,7 @@
   {
     "title": "The Office",
     "type": "TV",
-    "genre": "CoMedium",
+    "genre": "Comedia",
     "duration": "Long",
     "stars": 4,
     "original_language": "Inglés"
@@ -203,7 +203,7 @@
     "title": "Vis a Vis",
     "type": "TV",
     "genre": "Drama",
-    "duration": "Long",
+    "duration": "Short",
     "stars": 3,
     "original_language": "Castellano"
   },
@@ -250,7 +250,7 @@
   {
     "title": "Plats Bruts",
     "type": "TV",
-    "genre": "CoMedium",
+    "genre": "Comedia",
     "duration": "Long",
     "stars": 5,
     "original_language": "Catalán"
@@ -274,7 +274,7 @@
   {
     "title": "Padre no hay más que uno",
     "type": "Movie",
-    "genre": "CoMedium",
+    "genre": "Comedia",
     "duration": "Medium",
     "stars": 1,
     "original_language": "Castellano"
@@ -282,7 +282,7 @@
   {
     "title": "Allí Abajo",
     "type": "TV",
-    "genre": "CoMedium",
+    "genre": "Comedia",
     "duration": "Medium",
     "stars": 2,
     "original_language": "Castellano"
@@ -290,7 +290,7 @@
   {
     "title": "Toc Toc",
     "type": "Movie",
-    "genre": "CoMedium",
+    "genre": "Comedia",
     "duration": "Medium",
     "stars": 2,
     "original_language": "Castellano"
@@ -306,7 +306,7 @@
   {
     "title": "Campamento Flipy",
     "type": "Movie",
-    "genre": "CoMedium",
+    "genre": "Comedia",
     "duration": "Medium",
     "stars": 1,
     "original_language": "Castellano"
@@ -322,7 +322,7 @@
   {
     "title": "Torrente",
     "type": "Movie",
-    "genre": "CoMedium",
+    "genre": "Comedia",
     "duration": "Medium",
     "stars": 2,
     "original_language": "Castellano"
