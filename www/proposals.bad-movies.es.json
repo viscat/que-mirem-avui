@@ -1,0 +1,66 @@
+[
+  {
+    "title": "The Room",
+    "type": "Movie",
+    "genre": "Drama",
+    "duration": "Medium",
+    "stars": 1,
+    "original_language": "Inglés"
+  },
+  {
+    "title": "Plan 9 desde el Espacio Exterior",
+    "type": "Movie",
+    "genre": "Ciencia-ficción",
+    "duration": "Short",
+    "stars": 1,
+    "original_language": "Inglés"
+  },
+  {
+    "title": "Sharknado",
+    "type": "Movie",
+    "genre": "Terror",
+    "duration": "Short",
+    "stars": 1,
+    "original_language": "Inglés"
+  },
+  {
+    "title": "Batman y Robin",
+    "type": "Movie",
+    "genre": "Aventura",
+    "duration": "Long",
+    "stars": 1,
+    "original_language": "Inglés"
+  },
+  {
+    "title": "Birdemic",
+    "type": "Movie",
+    "genre": "Terror",
+    "duration": "Medium",
+    "stars": 1,
+    "original_language": "Inglés"
+  },
+  {
+    "title": "Troll 2",
+    "type": "Movie",
+    "genre": "Terror",
+    "duration": "Short",
+    "stars": 1,
+    "original_language": "Inglés"
+  },
+  {
+    "title": "Catwoman",
+    "type": "Movie",
+    "genre": "Aventura",
+    "duration": "Medium",
+    "stars": 1,
+    "original_language": "Inglés"
+  },
+  {
+    "title": "Super Mario Bros.",
+    "type": "Movie",
+    "genre": "Aventura",
+    "duration": "Medium",
+    "stars": 1,
+    "original_language": "Inglés"
+  }
+]
