@@ -56,27 +56,27 @@
     "original_language": "Castellano"
   },
   {
+    "title": "Actrius",
+    "type": "Movie",
+    "genre": "Drama",
+    "duration": "Medium",
+    "stars": 4,
+    "original_language": "Catalán"
+  },
+  {
+    "title": "El perquè de tot plegat",
+    "type": "Movie",
+    "genre": "Comedia",
+    "duration": "Short",
+    "stars": 3,
+    "original_language": "Catalán"
+  },
+  {
     "title": "Pretty Woman",
     "type": "Movie",
     "genre": "Romántica",
     "duration": "Medium",
     "stars": 3,
-    "original_language": "Inglés"
-  },
-  {
-    "title": "Clueless",
-    "type": "Movie",
-    "genre": "Comedia",
-    "duration": "Short",
-    "stars": 2,
-    "original_language": "Inglés"
-  },
-  {
-    "title": "El guardaespaldas",
-    "type": "Movie",
-    "genre": "Romántica",
-    "duration": "Long",
-    "stars": 2,
     "original_language": "Inglés"
   },
   {
@@ -112,14 +112,6 @@
     "original_language": "Inglés"
   },
   {
-    "title": "Urgencias",
-    "type": "TV",
-    "genre": "Drama",
-    "duration": "Long",
-    "stars": 3,
-    "original_language": "Inglés"
-  },
-  {
     "title": "Buffy Cazavampiros",
     "type": "TV",
     "genre": "Fantasía",
@@ -128,28 +120,36 @@
     "original_language": "Inglés"
   },
   {
-    "title": "Ally McBeal",
+    "title": "Nissaga de poder",
     "type": "TV",
-    "genre": "Romántica",
+    "genre": "Drama",
+    "duration": "Long",
+    "stars": 4,
+    "original_language": "Catalán"
+  },
+  {
+    "title": "Poble Nou",
+    "type": "TV",
+    "genre": "Drama",
     "duration": "Medium",
     "stars": 3,
-    "original_language": "Inglés"
+    "original_language": "Catalán"
+  },
+  {
+    "title": "Estació d'enllaç",
+    "type": "TV",
+    "genre": "Drama",
+    "duration": "Medium",
+    "stars": 3,
+    "original_language": "Catalán"
   },
   {
     "title": "Médico de familia",
     "type": "TV",
     "genre": "Drama",
     "duration": "Medium",
-    "stars": 3,
+    "stars": 2,
     "original_language": "Castellano"
-  },
-  {
-    "title": "Nissaga de poder",
-    "type": "TV",
-    "genre": "Drama",
-    "duration": "Long",
-    "stars": 4,
-    "original_language": "Català"
   },
   {
     "title": "Baywatch",

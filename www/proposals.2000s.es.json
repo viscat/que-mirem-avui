@@ -64,20 +64,20 @@
     "original_language": "Castellano"
   },
   {
-    "title": "Mean Girls",
+    "title": "Salvador (Puig Antich)",
     "type": "Movie",
-    "genre": "Comedia",
-    "duration": "Medium",
-    "stars": 3,
-    "original_language": "Inglés"
+    "genre": "Drama",
+    "duration": "Long",
+    "stars": 4,
+    "original_language": "Catalán"
   },
   {
-    "title": "Borat",
+    "title": "El mar",
     "type": "Movie",
-    "genre": "Comedia",
+    "genre": "Drama",
     "duration": "Medium",
-    "stars": 2,
-    "original_language": "Inglés"
+    "stars": 3,
+    "original_language": "Catalán"
   },
   {
     "title": "The Wire",
@@ -128,20 +128,20 @@
     "original_language": "Inglés"
   },
   {
-    "title": "Mujeres Desesperadas",
+    "title": "Porca misèria",
     "type": "TV",
     "genre": "Comedia",
-    "duration": "Long",
-    "stars": 3,
-    "original_language": "Inglés"
+    "duration": "Medium",
+    "stars": 4,
+    "original_language": "Catalán"
   },
   {
-    "title": "Anatomía de Grey",
+    "title": "Ventdelplà",
     "type": "TV",
     "genre": "Drama",
     "duration": "Long",
     "stars": 3,
-    "original_language": "Inglés"
+    "original_language": "Catalán"
   },
   {
     "title": "El cor de la ciutat",
@@ -149,7 +149,7 @@
     "genre": "Drama",
     "duration": "Long",
     "stars": 2,
-    "original_language": "Català"
+    "original_language": "Catalán"
   },
   {
     "title": "CSI",

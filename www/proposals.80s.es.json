@@ -20,21 +20,13 @@
     "type": "Movie",
     "genre": "Terror",
     "duration": "Long",
-    "stars": 5,
+    "stars": 4,
     "original_language": "Inglés"
   },
   {
     "title": "E.T.",
     "type": "Movie",
     "genre": "Aventura",
-    "duration": "Medium",
-    "stars": 4,
-    "original_language": "Inglés"
-  },
-  {
-    "title": "Los Cazafantasmas",
-    "type": "Movie",
-    "genre": "Comedia",
     "duration": "Medium",
     "stars": 4,
     "original_language": "Inglés"
@@ -48,12 +40,36 @@
     "original_language": "Inglés"
   },
   {
-    "title": "The Breakfast Club",
+    "title": "Mujeres al borde de un ataque de nervios",
     "type": "Movie",
-    "genre": "Drama",
+    "genre": "Comedia",
     "duration": "Medium",
     "stars": 4,
-    "original_language": "Inglés"
+    "original_language": "Castellano"
+  },
+  {
+    "title": "La plaça del Diamant",
+    "type": "Movie",
+    "genre": "Drama",
+    "duration": "Long",
+    "stars": 4,
+    "original_language": "Catalán"
+  },
+  {
+    "title": "El complot dels anells",
+    "type": "Movie",
+    "genre": "Aventura",
+    "duration": "Medium",
+    "stars": 3,
+    "original_language": "Catalán"
+  },
+  {
+    "title": "El vicari d'Olot",
+    "type": "Movie",
+    "genre": "Comedia",
+    "duration": "Medium",
+    "stars": 2,
+    "original_language": "Catalán"
   },
   {
     "title": "Dirty Dancing",
@@ -64,19 +80,11 @@
     "original_language": "Inglés"
   },
   {
-    "title": "Mujeres al borde de un ataque de nervios",
-    "type": "Movie",
+    "title": "Cheers",
+    "type": "TV",
     "genre": "Comedia",
-    "duration": "Medium",
-    "stars": 4,
-    "original_language": "Castellano"
-  },
-  {
-    "title": "Beetlejuice",
-    "type": "Movie",
-    "genre": "Comedia",
-    "duration": "Medium",
-    "stars": 2,
+    "duration": "Long",
+    "stars": 5,
     "original_language": "Inglés"
   },
   {
@@ -88,12 +96,28 @@
     "original_language": "Inglés"
   },
   {
-    "title": "Cheers",
+    "title": "Luz de Luna",
+    "type": "TV",
+    "genre": "Romántica",
+    "duration": "Medium",
+    "stars": 4,
+    "original_language": "Inglés"
+  },
+  {
+    "title": "Verano Azul",
+    "type": "TV",
+    "genre": "Drama",
+    "duration": "Short",
+    "stars": 4,
+    "original_language": "Castellano"
+  },
+  {
+    "title": "La granja",
     "type": "TV",
     "genre": "Comedia",
-    "duration": "Long",
-    "stars": 5,
-    "original_language": "Inglés"
+    "duration": "Medium",
+    "stars": 3,
+    "original_language": "Catalán"
   },
   {
     "title": "MacGyver",
@@ -120,35 +144,11 @@
     "original_language": "Inglés"
   },
   {
-    "title": "Luz de Luna",
-    "type": "TV",
-    "genre": "Romántica",
-    "duration": "Medium",
-    "stars": 4,
-    "original_language": "Inglés"
-  },
-  {
     "title": "Dallas",
     "type": "TV",
     "genre": "Drama",
     "duration": "Long",
     "stars": 2,
-    "original_language": "Inglés"
-  },
-  {
-    "title": "Verano Azul",
-    "type": "TV",
-    "genre": "Drama",
-    "duration": "Short",
-    "stars": 4,
-    "original_language": "Castellano"
-  },
-  {
-    "title": "Magnum P.I.",
-    "type": "TV",
-    "genre": "Thriller",
-    "duration": "Long",
-    "stars": 3,
     "original_language": "Inglés"
   },
   {
