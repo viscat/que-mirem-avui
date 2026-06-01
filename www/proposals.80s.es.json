@@ -1,0 +1,162 @@
+[
+  {
+    "title": "Regreso al Futuro",
+    "type": "Movie",
+    "genre": "Aventura",
+    "duration": "Long",
+    "stars": 5,
+    "original_language": "Inglés"
+  },
+  {
+    "title": "Blade Runner",
+    "type": "Movie",
+    "genre": "Ciencia-ficción",
+    "duration": "Long",
+    "stars": 5,
+    "original_language": "Inglés"
+  },
+  {
+    "title": "El Resplandor",
+    "type": "Movie",
+    "genre": "Terror",
+    "duration": "Long",
+    "stars": 5,
+    "original_language": "Inglés"
+  },
+  {
+    "title": "E.T.",
+    "type": "Movie",
+    "genre": "Aventura",
+    "duration": "Medium",
+    "stars": 4,
+    "original_language": "Inglés"
+  },
+  {
+    "title": "Los Cazafantasmas",
+    "type": "Movie",
+    "genre": "Comedia",
+    "duration": "Medium",
+    "stars": 4,
+    "original_language": "Inglés"
+  },
+  {
+    "title": "Scarface",
+    "type": "Movie",
+    "genre": "Drama",
+    "duration": "Long",
+    "stars": 4,
+    "original_language": "Inglés"
+  },
+  {
+    "title": "The Breakfast Club",
+    "type": "Movie",
+    "genre": "Drama",
+    "duration": "Medium",
+    "stars": 4,
+    "original_language": "Inglés"
+  },
+  {
+    "title": "Dirty Dancing",
+    "type": "Movie",
+    "genre": "Romántica",
+    "duration": "Medium",
+    "stars": 3,
+    "original_language": "Inglés"
+  },
+  {
+    "title": "Mujeres al borde de un ataque de nervios",
+    "type": "Movie",
+    "genre": "Comedia",
+    "duration": "Medium",
+    "stars": 4,
+    "original_language": "Castellano"
+  },
+  {
+    "title": "Beetlejuice",
+    "type": "Movie",
+    "genre": "Comedia",
+    "duration": "Medium",
+    "stars": 2,
+    "original_language": "Inglés"
+  },
+  {
+    "title": "Miami Vice",
+    "type": "TV",
+    "genre": "Thriller",
+    "duration": "Long",
+    "stars": 4,
+    "original_language": "Inglés"
+  },
+  {
+    "title": "Cheers",
+    "type": "TV",
+    "genre": "Comedia",
+    "duration": "Long",
+    "stars": 5,
+    "original_language": "Inglés"
+  },
+  {
+    "title": "MacGyver",
+    "type": "TV",
+    "genre": "Aventura",
+    "duration": "Long",
+    "stars": 3,
+    "original_language": "Inglés"
+  },
+  {
+    "title": "El Equipo A",
+    "type": "TV",
+    "genre": "Aventura",
+    "duration": "Medium",
+    "stars": 3,
+    "original_language": "Inglés"
+  },
+  {
+    "title": "ALF",
+    "type": "TV",
+    "genre": "Comedia",
+    "duration": "Short",
+    "stars": 3,
+    "original_language": "Inglés"
+  },
+  {
+    "title": "Luz de Luna",
+    "type": "TV",
+    "genre": "Romántica",
+    "duration": "Medium",
+    "stars": 4,
+    "original_language": "Inglés"
+  },
+  {
+    "title": "Dallas",
+    "type": "TV",
+    "genre": "Drama",
+    "duration": "Long",
+    "stars": 2,
+    "original_language": "Inglés"
+  },
+  {
+    "title": "Verano Azul",
+    "type": "TV",
+    "genre": "Drama",
+    "duration": "Short",
+    "stars": 4,
+    "original_language": "Castellano"
+  },
+  {
+    "title": "Magnum P.I.",
+    "type": "TV",
+    "genre": "Thriller",
+    "duration": "Long",
+    "stars": 3,
+    "original_language": "Inglés"
+  },
+  {
+    "title": "Dinastía",
+    "type": "TV",
+    "genre": "Drama",
+    "duration": "Long",
+    "stars": 1,
+    "original_language": "Inglés"
+  }
+]

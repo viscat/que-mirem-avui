@@ -1,0 +1,162 @@
+[
+  {
+    "title": "El silencio de los corderos",
+    "type": "Movie",
+    "genre": "Thriller",
+    "duration": "Medium",
+    "stars": 5,
+    "original_language": "Inglés"
+  },
+  {
+    "title": "Goodfellas",
+    "type": "Movie",
+    "genre": "Drama",
+    "duration": "Long",
+    "stars": 4,
+    "original_language": "Inglés"
+  },
+  {
+    "title": "Terminator 2",
+    "type": "Movie",
+    "genre": "Ciencia-ficción",
+    "duration": "Long",
+    "stars": 5,
+    "original_language": "Inglés"
+  },
+  {
+    "title": "Todo sobre mi madre",
+    "type": "Movie",
+    "genre": "Drama",
+    "duration": "Medium",
+    "stars": 5,
+    "original_language": "Castellano"
+  },
+  {
+    "title": "El sexto sentido",
+    "type": "Movie",
+    "genre": "Thriller",
+    "duration": "Medium",
+    "stars": 4,
+    "original_language": "Inglés"
+  },
+  {
+    "title": "Eduardo Manostijeras",
+    "type": "Movie",
+    "genre": "Fantasía",
+    "duration": "Medium",
+    "stars": 4,
+    "original_language": "Inglés"
+  },
+  {
+    "title": "El día de la bestia",
+    "type": "Movie",
+    "genre": "Comedia",
+    "duration": "Medium",
+    "stars": 4,
+    "original_language": "Castellano"
+  },
+  {
+    "title": "Pretty Woman",
+    "type": "Movie",
+    "genre": "Romántica",
+    "duration": "Medium",
+    "stars": 3,
+    "original_language": "Inglés"
+  },
+  {
+    "title": "Clueless",
+    "type": "Movie",
+    "genre": "Comedia",
+    "duration": "Short",
+    "stars": 2,
+    "original_language": "Inglés"
+  },
+  {
+    "title": "El guardaespaldas",
+    "type": "Movie",
+    "genre": "Romántica",
+    "duration": "Long",
+    "stars": 2,
+    "original_language": "Inglés"
+  },
+  {
+    "title": "Friends",
+    "type": "TV",
+    "genre": "Comedia",
+    "duration": "Long",
+    "stars": 5,
+    "original_language": "Inglés"
+  },
+  {
+    "title": "Los Soprano",
+    "type": "TV",
+    "genre": "Drama",
+    "duration": "Long",
+    "stars": 4,
+    "original_language": "Inglés"
+  },
+  {
+    "title": "Twin Peaks",
+    "type": "TV",
+    "genre": "Thriller",
+    "duration": "Short",
+    "stars": 4,
+    "original_language": "Inglés"
+  },
+  {
+    "title": "Expediente X",
+    "type": "TV",
+    "genre": "Ciencia-ficción",
+    "duration": "Long",
+    "stars": 4,
+    "original_language": "Inglés"
+  },
+  {
+    "title": "Urgencias",
+    "type": "TV",
+    "genre": "Drama",
+    "duration": "Long",
+    "stars": 3,
+    "original_language": "Inglés"
+  },
+  {
+    "title": "Buffy Cazavampiros",
+    "type": "TV",
+    "genre": "Fantasía",
+    "duration": "Long",
+    "stars": 5,
+    "original_language": "Inglés"
+  },
+  {
+    "title": "Ally McBeal",
+    "type": "TV",
+    "genre": "Romántica",
+    "duration": "Medium",
+    "stars": 3,
+    "original_language": "Inglés"
+  },
+  {
+    "title": "Médico de familia",
+    "type": "TV",
+    "genre": "Drama",
+    "duration": "Medium",
+    "stars": 3,
+    "original_language": "Castellano"
+  },
+  {
+    "title": "Nissaga de poder",
+    "type": "TV",
+    "genre": "Drama",
+    "duration": "Long",
+    "stars": 4,
+    "original_language": "Català"
+  },
+  {
+    "title": "Baywatch",
+    "type": "TV",
+    "genre": "Drama",
+    "duration": "Long",
+    "stars": 1,
+    "original_language": "Inglés"
+  }
+]
