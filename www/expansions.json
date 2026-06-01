@@ -1,0 +1,16 @@
+[
+  {
+    "id": "base",
+    "name": "Base",
+    "description": "Les 40 propostes originals",
+    "file": "proposals.es.json",
+    "default": true
+  },
+  {
+    "id": "bad-movies",
+    "name": "Pel·lícules Dolentes 🤣",
+    "description": "Les pitjors pel·lícules de la història del cinema",
+    "file": "proposals.bad-movies.es.json",
+    "default": false
+  }
+]

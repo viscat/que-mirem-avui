@@ -1,5 +1,5 @@
 import { describe, it, expect } from "vitest";
-import { readFileSync } from "fs";
+import { readFileSync, readdirSync } from "fs";
 import { join, dirname } from "path";
 import { fileURLToPath } from "url";
 
@@ -10,56 +10,97 @@ function loadJSON(filename) {
   return JSON.parse(readFileSync(join(wwwDir, filename), "utf-8"));
 }
 
+// Discover all proposal files (base + expansions)
+const proposalFiles = readdirSync(wwwDir).filter(f => /^proposals\.[^.]+\.es\.json$/.test(f));
+
 // ---------------------------------------------------------------------------
-// proposals.es.json
+// All proposals files (base + expansions)
 // ---------------------------------------------------------------------------
 
-describe("proposals.es.json", () => {
-  const proposals = loadJSON("proposals.es.json");
-  const VALID_TYPES = ["Movie", "TV"];
-  const VALID_DURATIONS = ["Short", "Medium", "Long"];
+const VALID_TYPES = ["Movie", "TV"];
+const VALID_DURATIONS = ["Short", "Medium", "Long"];
+
+proposalFiles.forEach(filename => {
+  describe(filename, () => {
+    const proposals = loadJSON(filename);
+
+    it("has at least one entry", () => {
+      expect(proposals.length).toBeGreaterThan(0);
+    });
+
+    it("all titles are non-empty strings", () => {
+      proposals.forEach(p =>
+        expect(typeof p.title === "string" && p.title.length > 0, `"${p.title}" title is empty`).toBe(true)
+      );
+    });
+
+    it("all types are 'Movie' or 'TV'", () => {
+      proposals.forEach(p =>
+        expect(VALID_TYPES, `"${p.title}" has invalid type "${p.type}"`).toContain(p.type)
+      );
+    });
+
+    it("all durations are Short, Medium, or Long", () => {
+      proposals.forEach(p =>
+        expect(VALID_DURATIONS, `"${p.title}" has invalid duration "${p.duration}"`).toContain(p.duration)
+      );
+    });
+
+    it("all star ratings are integers between 1 and 5", () => {
+      proposals.forEach(p => {
+        expect(Number.isInteger(p.stars), `"${p.title}" stars is not an integer`).toBe(true);
+        expect(p.stars, `"${p.title}" stars out of range`).toBeGreaterThanOrEqual(1);
+        expect(p.stars, `"${p.title}" stars out of range`).toBeLessThanOrEqual(5);
+      });
+    });
+
+    it("all genres are non-empty strings", () => {
+      proposals.forEach(p =>
+        expect(typeof p.genre === "string" && p.genre.length > 0, `"${p.title}" has empty genre`).toBe(true)
+      );
+    });
+
+    it("original_language is a string when present", () => {
+      proposals.forEach(p => {
+        if (p.original_language !== undefined) {
+          expect(typeof p.original_language, `"${p.title}" original_language is not a string`).toBe("string");
+        }
+      });
+    });
+  });
+});
+
+// ---------------------------------------------------------------------------
+// expansions.json manifest
+// ---------------------------------------------------------------------------
+
+describe("expansions.json", () => {
+  const expansions = loadJSON("expansions.json");
 
   it("has at least one entry", () => {
-    expect(proposals.length).toBeGreaterThan(0);
+    expect(expansions.length).toBeGreaterThan(0);
   });
 
-  it("all titles are non-empty strings", () => {
-    proposals.forEach(p =>
-      expect(typeof p.title === "string" && p.title.length > 0, `"${p.title}" title is empty`).toBe(true)
-    );
-  });
-
-  it("all types are 'Movie' or 'TV'", () => {
-    proposals.forEach(p =>
-      expect(VALID_TYPES, `"${p.title}" has invalid type "${p.type}"`).toContain(p.type)
-    );
-  });
-
-  it("all durations are Short, Medium, or Long", () => {
-    proposals.forEach(p =>
-      expect(VALID_DURATIONS, `"${p.title}" has invalid duration "${p.duration}"`).toContain(p.duration)
-    );
-  });
-
-  it("all star ratings are integers between 1 and 5", () => {
-    proposals.forEach(p => {
-      expect(Number.isInteger(p.stars), `"${p.title}" stars is not an integer`).toBe(true);
-      expect(p.stars, `"${p.title}" stars out of range`).toBeGreaterThanOrEqual(1);
-      expect(p.stars, `"${p.title}" stars out of range`).toBeLessThanOrEqual(5);
+  it("each entry has id, name, description, file and default fields", () => {
+    expansions.forEach(exp => {
+      expect(exp.id, "missing id").toBeTruthy();
+      expect(exp.name, "missing name").toBeTruthy();
+      expect(exp.description, "missing description").toBeTruthy();
+      expect(exp.file, "missing file").toBeTruthy();
+      expect(typeof exp.default).toBe("boolean");
     });
   });
 
-  it("all genres are non-empty strings", () => {
-    proposals.forEach(p =>
-      expect(typeof p.genre === "string" && p.genre.length > 0, `"${p.title}" has empty genre`).toBe(true)
-    );
+  it("each expansion file listed in the manifest actually exists", () => {
+    expansions.forEach(exp => {
+      expect(() => loadJSON(exp.file), `${exp.file} not found`).not.toThrow();
+    });
   });
 
-  it("original_language is a string when present", () => {
-    proposals.forEach(p => {
-      if (p.original_language !== undefined) {
-        expect(typeof p.original_language, `"${p.title}" original_language is not a string`).toBe("string");
-      }
+  it("every proposals file in www/ is listed in the manifest", () => {
+    const manifestFiles = expansions.map(e => e.file);
+    proposalFiles.forEach(f => {
+      expect(manifestFiles, `${f} exists but is not in expansions.json`).toContain(f);
     });
   });
 });
