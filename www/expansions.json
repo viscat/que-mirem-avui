@@ -7,6 +7,27 @@
     "default": true
   },
   {
+    "id": "80s",
+    "name": "Dècada dels 80 📼",
+    "description": "Les millors (i pitjors) pel·lícules i sèries dels anys 80",
+    "file": "proposals.80s.es.json",
+    "default": false
+  },
+  {
+    "id": "90s",
+    "name": "Dècada dels 90 💿",
+    "description": "Les millors (i pitjors) pel·lícules i sèries dels anys 90",
+    "file": "proposals.90s.es.json",
+    "default": false
+  },
+  {
+    "id": "2000s",
+    "name": "Dècada dels 2000 📀",
+    "description": "Les millors (i pitjors) pel·lícules i sèries dels anys 2000",
+    "file": "proposals.2000s.es.json",
+    "default": false
+  },
+  {
     "id": "bad-movies",
     "name": "Pel·lícules Dolentes 🤣",
     "description": "Les pitjors pel·lícules de la història del cinema",

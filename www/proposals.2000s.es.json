@@ -1,0 +1,162 @@
+[
+  {
+    "title": "El caballero oscuro",
+    "type": "Movie",
+    "genre": "Aventura",
+    "duration": "Long",
+    "stars": 5,
+    "original_language": "Inglés"
+  },
+  {
+    "title": "El señor de los anillos",
+    "type": "Movie",
+    "genre": "Fantasía",
+    "duration": "Long",
+    "stars": 5,
+    "original_language": "Inglés"
+  },
+  {
+    "title": "Memento",
+    "type": "Movie",
+    "genre": "Thriller",
+    "duration": "Medium",
+    "stars": 4,
+    "original_language": "Inglés"
+  },
+  {
+    "title": "Mar adentro",
+    "type": "Movie",
+    "genre": "Drama",
+    "duration": "Long",
+    "stars": 5,
+    "original_language": "Castellano"
+  },
+  {
+    "title": "No es país para viejos",
+    "type": "Movie",
+    "genre": "Thriller",
+    "duration": "Long",
+    "stars": 4,
+    "original_language": "Inglés"
+  },
+  {
+    "title": "Gladiator",
+    "type": "Movie",
+    "genre": "Aventura",
+    "duration": "Long",
+    "stars": 4,
+    "original_language": "Inglés"
+  },
+  {
+    "title": "Volver",
+    "type": "Movie",
+    "genre": "Drama",
+    "duration": "Medium",
+    "stars": 4,
+    "original_language": "Castellano"
+  },
+  {
+    "title": "La mala educación",
+    "type": "Movie",
+    "genre": "Thriller",
+    "duration": "Medium",
+    "stars": 3,
+    "original_language": "Castellano"
+  },
+  {
+    "title": "Salvador (Puig Antich)",
+    "type": "Movie",
+    "genre": "Drama",
+    "duration": "Long",
+    "stars": 4,
+    "original_language": "Catalán"
+  },
+  {
+    "title": "El mar",
+    "type": "Movie",
+    "genre": "Drama",
+    "duration": "Medium",
+    "stars": 3,
+    "original_language": "Catalán"
+  },
+  {
+    "title": "The Wire",
+    "type": "TV",
+    "genre": "Drama",
+    "duration": "Long",
+    "stars": 5,
+    "original_language": "Inglés"
+  },
+  {
+    "title": "Mad Men",
+    "type": "TV",
+    "genre": "Drama",
+    "duration": "Long",
+    "stars": 4,
+    "original_language": "Inglés"
+  },
+  {
+    "title": "Prison Break",
+    "type": "TV",
+    "genre": "Thriller",
+    "duration": "Medium",
+    "stars": 4,
+    "original_language": "Inglés"
+  },
+  {
+    "title": "Battlestar Galactica",
+    "type": "TV",
+    "genre": "Ciencia-ficción",
+    "duration": "Medium",
+    "stars": 4,
+    "original_language": "Inglés"
+  },
+  {
+    "title": "Aquí no hay quien viva",
+    "type": "TV",
+    "genre": "Comedia",
+    "duration": "Medium",
+    "stars": 4,
+    "original_language": "Castellano"
+  },
+  {
+    "title": "Arrested Development",
+    "type": "TV",
+    "genre": "Comedia",
+    "duration": "Short",
+    "stars": 5,
+    "original_language": "Inglés"
+  },
+  {
+    "title": "Porca misèria",
+    "type": "TV",
+    "genre": "Comedia",
+    "duration": "Medium",
+    "stars": 4,
+    "original_language": "Catalán"
+  },
+  {
+    "title": "Ventdelplà",
+    "type": "TV",
+    "genre": "Drama",
+    "duration": "Long",
+    "stars": 3,
+    "original_language": "Catalán"
+  },
+  {
+    "title": "El cor de la ciutat",
+    "type": "TV",
+    "genre": "Drama",
+    "duration": "Long",
+    "stars": 2,
+    "original_language": "Catalán"
+  },
+  {
+    "title": "CSI",
+    "type": "TV",
+    "genre": "Thriller",
+    "duration": "Long",
+    "stars": 1,
+    "original_language": "Inglés"
+  }
+]
